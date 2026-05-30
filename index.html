@@ -619,6 +619,88 @@ sns.heatmap(pivot, cmap=<span class="str">'RdYlGn'</span>, vmin=<span class="str
         </div>
 
 
+        <!-- SEM TOOLKIT — NEW PROJECT -->
+        <div class="exp-card" id="card-sem-toolkit">
+          <div class="card-header">
+            <div class="card-header-left">
+              <div class="card-logo" style="background:linear-gradient(135deg,#2b6cb0,#1a365d);font-size:0.55rem">SEM<br>KIT</div>
+              <div class="card-title-wrap">
+                <h3>Semiconductor Process Intelligence Toolkit</h3>
+                <p>Python &middot; PyTorch &middot; Streamlit &middot; SHAP &middot; CNN &middot; TMM &middot; DOE</p>
+                <span class="proj-cat-chip" style="color:#2b4c7e;background:#ebf4ff;border-color:#bee3f8">Semiconductor &amp; AI/ML</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="card-meta-labels">
+                <span class="role-badge">Personal Project</span>
+                <span class="card-date">May 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>A production-grade, four-module Python &amp; Streamlit toolkit applying real semiconductor engineering workflows to industry-standard datasets &mdash; fault detection, optical metrology, wafer defect classification, and process DOE. Deployed live on Streamlit Cloud. Built to demonstrate the exact skills semiconductor fabs use in intelligent manufacturing, yield management, and process control.</p>
+
+              <div class="impact-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:16px">
+                <div class="impact-box"><div class="impact-num">98%</div><div class="impact-label">Fault Detection Accuracy</div></div>
+                <div class="impact-box"><div class="impact-num">81%</div><div class="impact-label">Wafer Defect Classification</div></div>
+                <div class="impact-box"><div class="impact-num">4 nm</div><div class="impact-label">Ellipsometry Fit Error</div></div>
+                <div class="impact-box"><div class="impact-num">0.702</div><div class="impact-label">DOE Desirability Score</div></div>
+              </div>
+
+              <h4>Module 1 &mdash; Wafer Fault Detection (SECOM)</h4>
+              <ul>
+                <li><strong>Dataset:</strong> UCI SECOM &mdash; 1,567 wafers, 591 sensors, 14:1 pass/fail class imbalance (the exact imbalance ratio seen in real fab data)</li>
+                <li><strong>Approach:</strong> Feature cleaning (442 sensors retained after zero-variance removal) &rarr; SMOTE balancing &rarr; Random Forest classifier &rarr; SHAP explainability</li>
+                <li><strong>Result:</strong> 98% accuracy vs. 93% naive baseline; SHAP identifies top yield-limiting sensors &mdash; directly replicating root cause analysis workflows used at TSMC, Micron, and KLA</li>
+              </ul>
+
+              <h4>Module 2 &mdash; Optical Thin Film Metrology</h4>
+              <ul>
+                <li><strong>Physics engine:</strong> Transfer Matrix Method (TMM) for multi-layer optical simulation across 4 film stacks (SiO&#x2082;, Si&#x2083;N&#x2084;, HfO&#x2082;, a-Si) using real semiconductor material optical constants</li>
+                <li><strong>Ellipsometry fitting:</strong> Spectroscopic fitting of &#x3A8;/&#x394; data; 4 nm thickness error; uniformity mapping across 49-point wafer grid</li>
+                <li><strong>Relevance:</strong> Directly maps to metrology engineer skills required by TSMC, Applied Materials, and Lam Research for CVD/ALD/PVD film characterization</li>
+              </ul>
+
+              <h4>Module 3 &mdash; Wafer Defect Pattern Classifier</h4>
+              <ul>
+                <li><strong>Dataset:</strong> WM-811K (811,000 TSMC wafer maps); trained on 2,249 labeled defect maps across 9 pattern classes (edge, scratch, center, donut, local, random, near-full, none)</li>
+                <li><strong>Architecture:</strong> Custom CNN + Grad-CAM spatial localization for explainable defect attribution &mdash; 81% classification accuracy</li>
+                <li><strong>Relevance:</strong> Replicates automated defect classification (ADC) systems deployed by KLA, Synopsys, and Samsung Semiconductor R&amp;D; addresses a top hiring priority across fab companies in 2025</li>
+              </ul>
+
+              <h4>Module 4 &mdash; PECVD Process DOE Optimization</h4>
+              <ul>
+                <li><strong>Design:</strong> 2&#x2074; full factorial (16 runs + 4 center points); factors: RF power, pressure, SiH&#x2084; flow, temperature; responses: deposition rate, uniformity, stress, refractive index</li>
+                <li><strong>Optimization:</strong> Multi-response desirability function; 0.702 desirability at optimal settings; Pareto tradeoff mapping and process window visualization</li>
+                <li><strong>Relevance:</strong> Demonstrates the SPC + DOE + process window skills listed as required in TSMC, Micron, and Applied Materials process engineer JDs</li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">SHAP</span>
+                <span class="tech-tag">SMOTE</span>
+                <span class="tech-tag">CNN + Grad-CAM</span>
+                <span class="tech-tag">Transfer Matrix Method</span>
+                <span class="tech-tag">Ellipsometry</span>
+                <span class="tech-tag">2&#x2074; Factorial DOE</span>
+                <span class="tech-tag">Random Forest</span>
+                <span class="tech-tag">SPC</span>
+                <span class="tech-tag">Wafer Defect Classification</span>
+                <span class="tech-tag">SECOM Dataset</span>
+                <span class="tech-tag">WM-811K Dataset</span>
+              </div>
+
+              <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+                <a href="https://sem-toolkit-necebpkufzjgmfdmcr6sw7.streamlit.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#0a0a0a;color:#fff;padding:8px 18px;border-radius:4px;text-decoration:none;font-size:0.78rem;font-weight:700;letter-spacing:0.5px">&#x1F680; Live Demo</a>
+                <a href="https://github.com/Narain115/sem-toolkit" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:transparent;color:#0a0a0a;padding:8px 18px;border-radius:4px;text-decoration:none;font-size:0.78rem;font-weight:700;letter-spacing:0.5px;border:1px solid #ccc">&#x1F4BB; GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="exp-card" id="card-p4">
           <div class="card-header">
             <div class="card-header-left">
@@ -837,14 +919,14 @@ sns.heatmap(pivot, cmap=<span class="str">'RdYlGn'</span>, vmin=<span class="str
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon">&#x1F52C;</div>
-        <div class="skill-title">Materials Characterization</div>
+        <div class="skill-title">Materials Characterization &amp; Metrology</div>
         <ul class="skill-list">
-          <li>FT-IR Spectroscopy</li>
-          <li>DSC, TGA, TMA, DMA</li>
-          <li>SEM (exposure), Profilometry</li>
-          <li>Ellipsometry (theory)</li>
-          <li>Tensile Testing &amp; Rheometry</li>
-          <li>200+ polymer samples characterized</li>
+          <li>Spectroscopic Ellipsometry (&Psi;/&Delta; fitting, TMM)</li>
+          <li>Optical Thin Film Simulation (Transfer Matrix Method)</li>
+          <li>Film Uniformity Mapping (49-pt wafer grid)</li>
+          <li>FT-IR Spectroscopy &middot; DSC &middot; TGA &middot; TMA &middot; DMA</li>
+          <li>SEM (exposure), Profilometry, Surface Roughness</li>
+          <li>200+ polymer &amp; semiconductor samples characterized</li>
         </ul>
       </div>
       <div class="skill-card reveal">
@@ -873,14 +955,14 @@ sns.heatmap(pivot, cmap=<span class="str">'RdYlGn'</span>, vmin=<span class="str
       </div>
       <div class="skill-card reveal">
         <div class="skill-icon">&#x1F4BB;</div>
-        <div class="skill-title">Data Analytics &amp; Programming</div>
+        <div class="skill-title">Data Analytics, ML &amp; Programming</div>
         <ul class="skill-list">
-          <li>Python: NumPy, Pandas, Matplotlib, Plotly</li>
-          <li>JMP (Statistical Analysis)</li>
-          <li>SQL (data warehouse queries)</li>
-          <li>MATLAB / Simulink</li>
+          <li>Python: NumPy, Pandas, Matplotlib, Scikit-learn, PyTorch</li>
+          <li>ML: Random Forest, CNN, SHAP, Grad-CAM, SMOTE</li>
+          <li>Wafer Fault Detection &amp; Defect Classification (ADC)</li>
+          <li>JMP (Statistical Analysis) &middot; SQL &middot; MATLAB</li>
           <li>Monte Carlo &amp; Bayesian Modeling</li>
-          <li>Microsoft Excel (advanced)</li>
+          <li>Streamlit Dashboard Deployment</li>
         </ul>
       </div>
     </div>
