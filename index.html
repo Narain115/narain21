@@ -134,6 +134,8 @@ section{padding:100px 48px}
 .impact-box:hover .impact-num{color:#1d4ed8}
 .impact-label{font-size:0.7rem;color:#888;margin-top:4px;transition:color 0.2s}
 .impact-box:hover .impact-label{color:#3b82f6}
+.proj-pair-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+@media(max-width:900px){.proj-pair-grid{grid-template-columns:1fr}}
 #card-sem-toolkit .card-body-inner>h4{margin:7px 0 3px}#card-sem-toolkit .card-body-inner>ul{margin-bottom:5px}#card-sem-toolkit .tech-tags{padding-top:6px}
 .sem-cta-primary{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:700;letter-spacing:0.5px;box-shadow:0 4px 14px rgba(37,99,235,0.35);transition:transform 0.15s,box-shadow 0.15s}
 .sem-cta-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,99,235,0.5)}
@@ -161,8 +163,8 @@ section{padding:100px 48px}
 
 /* SKILLS */
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.skill-card{background:#fff;border:1px solid #e0dbd4;border-radius:10px;padding:22px;transition:box-shadow 0.2s,border-color 0.2s}
-.skill-card:hover{box-shadow:0 6px 18px rgba(0,0,0,0.06);border-color:#bbb}
+.skill-card{background:#fff;border:1px solid #e0dbd4;border-radius:10px;padding:22px;transition:box-shadow 0.25s,border-color 0.25s}
+.skill-card:hover{box-shadow:0 10px 32px rgba(0,0,0,0.1);border-color:#2563eb}
 .skill-icon{font-size:1.5rem;margin-bottom:10px}
 .skill-title{font-weight:800;color:#0a0a0a;margin-bottom:12px;font-size:0.86rem;letter-spacing:0.2px}
 .skill-list{list-style:none}
@@ -220,9 +222,50 @@ footer{background:#0a0a0a;color:#444;text-align:center;padding:28px;font-size:0.
   .about-facts{grid-template-columns:1fr 1fr}
   .tab-images{grid-template-columns:1fr}
 }
-#projects .cards-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}#projects .exp-card{border-radius:12px;transition:box-shadow 0.25s,transform 0.2s}#projects .exp-card:hover{box-shadow:0 8px 28px rgba(0,0,0,0.10);transform:translateY(-2px)}#projects .exp-card .card-body{max-height:none!important;overflow:visible;transition:none}#projects .card-arrow{display:none}#projects .card-header{cursor:default;padding:16px 20px 14px;border-bottom:1px solid #f0ebe5}#projects .card-body-inner{padding:14px 20px 20px}#projects .card-title-wrap h3{font-size:0.9rem;letter-spacing:-0.2px}#projects .card-title-wrap>p:not(.card-company){font-size:0.77rem}#projects .card-meta{align-self:flex-start}#projects .tech-tags{padding-top:10px}.proj-cat-chip{display:inline-block;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:0.3px;margin-top:5px;border:1px solid transparent}@media(max-width:860px){#projects .cards-container{grid-template-columns:1fr}}#projects .card-body-inner>ul{gap:4px;margin-bottom:8px;margin-top:0}#projects .card-body-inner>ul>li{display:block;position:relative;padding-left:1.3em;font-size:0.82rem;line-height:1.5;color:#4a5568}#projects .card-body-inner>ul>li::before{position:absolute;left:0;top:0.1em;content:"\2192";color:#2b6cb0;font-weight:700;font-size:0.85em}#projects .card-body-inner>p+ul{margin-top:6px}#projects .card-body-inner>h4{margin:10px 0 5px;font-size:0.83rem}#projects .tab-images{margin:8px 0}.b44-exp-list{display:flex;flex-direction:column}.b44-exp-card{border:1px solid #E8E8E8;background:#fff;margin-bottom:16px;border-radius:6px}.b44-exp-inner{padding:24px 28px}.b44-exp-grid{display:grid;grid-template-columns:130px 1fr;gap:16px}.b44-date{font-size:0.68rem;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;padding-top:4px;line-height:1.4}.b44-logo-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}.b44-logo{width:40px;height:40px;min-width:40px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.6rem;font-weight:900;letter-spacing:0.04em;text-align:center}.b44-title-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:2px}.b44-title{font-weight:700;font-size:0.95rem;color:#111;margin:0;line-height:1.3}.b44-award{font-size:0.6rem;background:#FEF9C3;color:#854D0E;font-weight:700;padding:2px 7px;border-radius:2px;white-space:nowrap}.b44-company{font-size:0.72rem;color:#999;margin:0;line-height:1.4}.b44-bullets{list-style:none;padding:0;margin:10px 0 12px;display:flex;flex-direction:column;gap:6px}.b44-bullets li{display:flex;gap:8px;font-size:0.84rem;color:#444;line-height:1.6}.b44-dash{color:#333;font-weight:700;flex-shrink:0;margin-top:1px}.b44-stats{display:flex;flex-wrap:wrap;gap:24px;margin:10px 0 12px}.b44-stat-num{font-size:1.1rem;font-weight:900;color:#111;margin:0;line-height:1.2}.b44-stat-label{font-size:0.6rem;color:#999;margin:2px 0 0;line-height:1.3}.b44-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}.b44-tag{font-size:0.67rem;background:#F2F2F2;color:#555;padding:2px 7px;border-radius:2px;font-weight:500}.b44-detail-btn{font-size:0.67rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#111;border:1px solid #222;padding:6px 14px;background:transparent;cursor:pointer;transition:background 0.2s,color 0.2s}.b44-detail-btn:hover{background:#111;color:#fff}.b44-detail-panel{display:none;border-top:1px solid #EEEEEE;padding-top:18px;margin-top:14px}.b44-detail-panel.open{display:block}.b44-detail-panel h4{font-size:0.82rem;font-weight:700;color:#2d3748;margin:14px 0 6px;text-transform:none}.b44-detail-panel h4:first-child{margin-top:0}.b44-detail-panel>p,.b44-detail-panel p{font-size:0.84rem;color:#444;line-height:1.65;margin-bottom:8px}.b44-detail-panel ul{list-style:none;padding:0;margin:0 0 10px}.b44-detail-panel ul li{display:block;position:relative;padding-left:1.3em;font-size:0.84rem;color:#444;line-height:1.55;margin-bottom:4px}.b44-detail-panel ul li::before{content:"\2192";position:absolute;left:0;top:0.1em;color:#2b6cb0;font-weight:700}.b44-detail-panel .tab-images{margin:10px 0}.b44-detail-panel .img-caption{font-size:0.73rem;color:#888;margin-top:4px;line-height:1.4}.b44-detail-panel .impact-grid{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0}.b44-detail-panel .impact-box{background:#f7f8fa;border-radius:6px;padding:10px 14px;min-width:90px}@media(max-width:700px){.b44-exp-grid{grid-template-columns:1fr}.b44-date{padding-bottom:6px}}</style>
+#projects .cards-container{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}#projects .exp-card{border-radius:12px;transition:box-shadow 0.25s,transform 0.2s}#projects .exp-card:hover{box-shadow:0 8px 28px rgba(0,0,0,0.10);transform:translateY(-2px)}#projects .exp-card .card-body{max-height:none!important;overflow:visible;transition:none}#projects .card-arrow{display:none}#projects .card-header{cursor:default;padding:16px 20px 14px;border-bottom:1px solid #f0ebe5}#projects .card-body-inner{padding:14px 20px 20px}#projects .card-title-wrap h3{font-size:0.9rem;letter-spacing:-0.2px}#projects .card-title-wrap>p:not(.card-company){font-size:0.77rem}#projects .card-meta{align-self:flex-start}#projects .tech-tags{padding-top:10px}.proj-cat-chip{display:inline-block;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:0.3px;margin-top:5px;border:1px solid transparent}@media(max-width:860px){#projects .cards-container{grid-template-columns:1fr}}#projects .card-body-inner>ul{gap:4px;margin-bottom:8px;margin-top:0}#projects .card-body-inner>ul>li{display:block;position:relative;padding-left:1.3em;font-size:0.82rem;line-height:1.5;color:#4a5568}#projects .card-body-inner>ul>li::before{position:absolute;left:0;top:0.1em;content:"\2192";color:#2b6cb0;font-weight:700;font-size:0.85em}#projects .card-body-inner>p+ul{margin-top:6px}#projects .card-body-inner>h4{margin:10px 0 5px;font-size:0.83rem}#projects .tab-images{margin:8px 0}.b44-exp-list{display:flex;flex-direction:column}.b44-exp-card{border:1px solid #E8E8E8;background:#fff;margin-bottom:16px;border-radius:6px}.b44-exp-inner{padding:24px 28px}.b44-exp-grid{display:grid;grid-template-columns:130px 1fr;gap:16px}.b44-date{font-size:0.68rem;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;padding-top:4px;line-height:1.4}.b44-logo-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}.b44-logo{width:40px;height:40px;min-width:40px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.6rem;font-weight:900;letter-spacing:0.04em;text-align:center}.b44-title-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:2px}.b44-title{font-weight:700;font-size:0.95rem;color:#111;margin:0;line-height:1.3}.b44-award{font-size:0.6rem;background:#FEF9C3;color:#854D0E;font-weight:700;padding:2px 7px;border-radius:2px;white-space:nowrap}.b44-company{font-size:0.72rem;color:#999;margin:0;line-height:1.4}.b44-bullets{list-style:none;padding:0;margin:10px 0 12px;display:flex;flex-direction:column;gap:6px}.b44-bullets li{display:flex;gap:12px;font-size:0.84rem;color:#444;line-height:1.6}.b44-dash{font-size:0;width:2px;background:linear-gradient(180deg,#2563eb,#93c5fd);flex-shrink:0;border-radius:2px;margin-top:3px;align-self:stretch}.b44-stats{display:flex;flex-wrap:wrap;gap:24px;margin:10px 0 12px}.b44-stat-num{font-size:1.1rem;font-weight:900;color:#111;margin:0;line-height:1.2}.b44-stat-label{font-size:0.6rem;color:#999;margin:2px 0 0;line-height:1.3}.b44-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}.b44-tag{font-size:0.67rem;background:#F2F2F2;color:#555;padding:2px 7px;border-radius:2px;font-weight:500}.b44-detail-btn{font-size:0.67rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#111;border:1px solid #222;padding:6px 14px;background:transparent;cursor:pointer;transition:background 0.2s,color 0.2s}.b44-detail-btn:hover{background:#111;color:#fff}.b44-detail-panel{display:none;border-top:1px solid #EEEEEE;padding-top:18px;margin-top:14px}.b44-detail-panel.open{display:block}.b44-detail-panel h4{font-size:0.82rem;font-weight:700;color:#2d3748;margin:14px 0 6px;text-transform:none}.b44-detail-panel h4:first-child{margin-top:0}.b44-detail-panel>p,.b44-detail-panel p{font-size:0.84rem;color:#444;line-height:1.65;margin-bottom:8px}.b44-detail-panel ul{list-style:none;padding:0;margin:0 0 10px}.b44-detail-panel ul li{display:block;position:relative;padding-left:1.3em;font-size:0.84rem;color:#444;line-height:1.55;margin-bottom:4px}.b44-detail-panel ul li::before{content:"\2192";position:absolute;left:0;top:0.1em;color:#2b6cb0;font-weight:700}.b44-detail-panel .tab-images{margin:10px 0}.b44-detail-panel .img-caption{font-size:0.73rem;color:#888;margin-top:4px;line-height:1.4}.b44-detail-panel .impact-grid{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0}.b44-detail-panel .impact-box{background:#f7f8fa;border-radius:6px;padding:10px 14px;min-width:90px}@media(max-width:700px){.b44-exp-grid{grid-template-columns:1fr}.b44-date{padding-bottom:6px}}
+/* Nav animated underline */
+.nav-links a{position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:100%;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform 0.3s ease}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+
+/* B44 experience card hover — left accent + lift */
+.b44-exp-card{transition:box-shadow 0.25s,transform 0.2s}
+.b44-exp-card:hover{box-shadow:-3px 0 0 #2563eb,0 8px 28px rgba(0,0,0,0.08);transform:translateX(3px)}
+
+/* Fact-card hover lift */
+.fact-card{transition:transform 0.2s,box-shadow 0.2s}
+.fact-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,0.09)}
+
+/* Hero photo hover */
+.hero-photo img{transition:filter 0.4s ease,transform 0.4s ease}
+.hero-photo img:hover{filter:grayscale(0%);transform:scale(1.03)}
+
+/* Skill list item hover */
+.skill-list li{transition:color 0.15s,transform 0.15s}
+.skill-list li:hover{color:#0a0a0a;transform:translateX(5px)}
+
+/* Contact item enhanced hover */
+.contact-item{transition:border-color 0.2s,box-shadow 0.2s,transform 0.2s}
+.contact-item:hover{border-color:#2563eb;box-shadow:0 6px 20px rgba(37,99,235,0.1);transform:translateY(-2px)}
+
+/* Back-to-top button */
+#back-top{position:fixed;bottom:32px;right:32px;width:42px;height:42px;background:#0a0a0a;color:#fff;border:none;border-radius:50%;font-size:1.2rem;cursor:pointer;z-index:999;opacity:0;transform:translateY(14px);transition:opacity 0.3s,transform 0.3s,background 0.2s;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,0.18)}
+#back-top.show{opacity:1;transform:translateY(0)}
+#back-top:hover{background:#2563eb;box-shadow:0 6px 20px rgba(37,99,235,0.4)}
+
+/* Section echo subtle movement on scroll */
+.section-echo{transition:transform 0.1s linear}
+
+#scroll-prog{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,#2563eb,#60a5fa);z-index:10000;width:0%;pointer-events:none}
+#cursor-dot{position:fixed;width:7px;height:7px;background:#2563eb;border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%)}
+#cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid rgba(37,99,235,0.32);border-radius:50%;pointer-events:none;z-index:9997;transform:translate(-50%,-50%);transition:transform 0.2s}
+</style>
 </head>
 <body>
+<div id="scroll-prog"></div>
+<button id="back-top" aria-label="Back to top">&#x2191;</button>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
 
 <!-- LOADING SCREEN -->
 <div id="loader">
@@ -255,10 +298,10 @@ footer{background:#0a0a0a;color:#444;text-align:center;padding:28px;font-size:0.
       <p class="hero-role">Materials Engineer &amp; Innovation Enthusiast</p>
       <p class="hero-statement">MSE Candidate at Purdue University, passionate about semiconductor engineering, battery cell design and cutting-edge manufacturing technologies</p>
       <div class="hero-stats">
-        <div class="hero-stat"><div class="hero-stat-num">3.7</div><div class="hero-stat-label">GPA Purdue</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">60%&#x2193;</div><div class="hero-stat-label">RCA Time</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">15%+</div><div class="hero-stat-label">Yield Recovery</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">200+</div><div class="hero-stat-label">Samples</div></div>
+        <div class="hero-stat"><div class="hero-stat-num" data-to="3.7" data-dec="1">3.7</div><div class="hero-stat-label">GPA Purdue</div></div>
+        <div class="hero-stat"><div class="hero-stat-num" data-to="60" data-sfx="%↓">60%&#x2193;</div><div class="hero-stat-label">RCA Time</div></div>
+        <div class="hero-stat"><div class="hero-stat-num" data-to="15" data-sfx="%+">15%+</div><div class="hero-stat-label">Yield Recovery</div></div>
+        <div class="hero-stat"><div class="hero-stat-num" data-to="200" data-sfx="+">200+</div><div class="hero-stat-label">Samples</div></div>
       </div>
       <div class="hero-cta">
         <a href="#contact" class="btn-hero-primary">Get in Touch</a>
@@ -297,12 +340,12 @@ footer{background:#0a0a0a;color:#444;text-align:center;padding:28px;font-size:0.
       </div>
       <div class="reveal">
         <div class="about-facts">
-          <div class="fact-card"><div class="fact-num">3.7</div><div class="fact-label">GPA at Purdue (MS)</div></div>
-          <div class="fact-card"><div class="fact-num">10K+</div><div class="fact-label">Data Points Analyzed at AMD</div></div>
-          <div class="fact-card"><div class="fact-num">60%&#x2193;</div><div class="fact-label">RCA Time Reduction</div></div>
-          <div class="fact-card"><div class="fact-num">15%+</div><div class="fact-label">Yield Recovery at AMD</div></div>
-          <div class="fact-card"><div class="fact-num">200+</div><div class="fact-label">Polymer Samples Characterized</div></div>
-          <div class="fact-card"><div class="fact-num">3&times;</div><div class="fact-label">HMWS Clearance Improvement</div></div>
+          <div class="fact-card"><div class="fact-num" data-to="3.7" data-dec="1">3.7</div><div class="fact-label">GPA at Purdue (MS)</div></div>
+          <div class="fact-card"><div class="fact-num" data-to="10" data-sfx="K+">10K+</div><div class="fact-label">Data Points Analyzed at AMD</div></div>
+          <div class="fact-card"><div class="fact-num" data-to="60" data-sfx="%↓">60%&#x2193;</div><div class="fact-label">RCA Time Reduction</div></div>
+          <div class="fact-card"><div class="fact-num" data-to="15" data-sfx="%+">15%+</div><div class="fact-label">Yield Recovery at AMD</div></div>
+          <div class="fact-card"><div class="fact-num" data-to="200" data-sfx="+">200+</div><div class="fact-label">Polymer Samples Characterized</div></div>
+          <div class="fact-card"><div class="fact-num" data-to="3" data-sfx="×">3&times;</div><div class="fact-label">HMWS Clearance Improvement</div></div>
         </div>
       </div>
     </div>
@@ -592,84 +635,6 @@ sns.heatmap(pivot, cmap=<span class="str">'RdYlGn'</span>, vmin=<span class="str
         </div>
 
 
-        <!-- SEM TOOLKIT &mdash; NEW PROJECT -->
-        <div class="exp-card" id="card-sem-toolkit">
-          <div class="card-header">
-            <div class="card-header-left">
-              <div class="card-logo" style="background:linear-gradient(135deg,#2b6cb0,#1a365d);font-size:0.55rem">SEM<br>KIT</div>
-              <div class="card-title-wrap">
-                <h3>Semiconductor Process Intelligence Toolkit</h3>
-                <p>Python &middot; PyTorch &middot; Streamlit &middot; SHAP &middot; CNN &middot; TMM &middot; DOE</p>
-                <span class="proj-cat-chip" style="color:#2b4c7e;background:#ebf4ff;border-color:#bee3f8">Semiconductor &amp; AI/ML</span>
-              </div>
-            </div>
-            <div class="card-meta">
-              <div class="card-meta-labels">
-                <span class="role-badge">Personal Project</span>
-                <span class="card-date">May 2026</span>
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="card-body-inner">
-              <p>A production-grade, four-module Python &amp; Streamlit toolkit applying real semiconductor engineering workflows to industry-standard datasets: <strong>fault detection</strong>, <strong>optical metrology</strong>, <strong>wafer defect classification</strong>, and <strong>process DOE</strong>. Deployed live on Streamlit Cloud. Built to advance intelligent manufacturing, yield optimization, and process control across semiconductor fabs.</p>
-
-              <div class="impact-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:10px">
-                <div class="impact-box"><div class="impact-num">98%</div><div class="impact-label">Fault Detection Accuracy</div></div>
-                <div class="impact-box"><div class="impact-num">81%</div><div class="impact-label">Wafer Defect Classification</div></div>
-                <div class="impact-box"><div class="impact-num">4 nm</div><div class="impact-label">Ellipsometry Fit Error</div></div>
-                <div class="impact-box"><div class="impact-num">0.702</div><div class="impact-label">DOE Desirability Score</div></div>
-              </div>
-
-              <h4>Module 1: Wafer Fault Detection (SECOM)</h4>
-              <ul>
-                <li><strong>Challenge:</strong> Real fab data carries a 14:1 pass/fail imbalance across 1,567 wafers and 591 sensors, making standard classifiers blind to failures. I cleaned features to 442 meaningful sensors and applied SMOTE balancing before training a Random Forest classifier.</li>
-                <li><strong>Approach:</strong> SHAP explainability was layered on top to surface the exact yield-limiting sensors rather than a black-box score, mirroring the root cause analysis workflow at TSMC, Micron, and KLA.</li>
-                <li><strong>Result:</strong> 98% classification accuracy vs. 93% naive baseline, with interpretable sensor attribution maps ready for process engineer review.</li>
-              </ul>
-
-              <h4>Module 2: Optical Thin Film Metrology</h4>
-              <ul>
-                <li><strong>Challenge:</strong> Film thickness errors at the nanometer scale shift device performance irreversibly. I built a Transfer Matrix Method (TMM) physics engine to simulate multi-layer optical behavior across 4 stacks (SiO&#x2082;, Si&#x2083;N&#x2084;, HfO&#x2082;, a-Si) using real semiconductor optical constants.</li>
-                <li><strong>Approach:</strong> Spectroscopic ellipsometry fitting of &#x3A8;/&#x394; data, achieving a 4 nm fit error with uniformity mapping across a 49-point wafer grid, matching real metrology throughput constraints.</li>
-                <li><strong>Result:</strong> A working optical simulation environment mirroring CVD/ALD/PVD film characterization workflows at TSMC, Applied Materials, and Lam Research.</li>
-              </ul>
-
-              <h4>Module 3: Wafer Defect Pattern Classifier</h4>
-              <ul>
-                <li><strong>Challenge:</strong> Manually reviewing 811,000 wafer maps (WM-811K) is infeasible in production. I trained a custom CNN on 2,249 labeled defect maps spanning 9 pattern classes: edge, scratch, center, donut, local, random, near-full, and none.</li>
-                <li><strong>Approach:</strong> Grad-CAM spatial localization was layered on top for pixel-level explainability, reaching 81% classification accuracy and enabling process engineers to trust the model output.</li>
-                <li><strong>Result:</strong> A working Automated Defect Classification (ADC) pipeline replicating systems at KLA, Synopsys, and Samsung Semiconductor R&amp;D.</li>
-              </ul>
-
-              <h4>Module 4: PECVD Process DOE Optimization</h4>
-              <ul>
-                <li><strong>Challenge:</strong> No single PECVD parameter can be tuned in isolation: RF power shifts stress while impacting uniformity. I designed a 2&#x2074; full factorial experiment (16 runs + 4 center points) across RF power, pressure, SiH&#x2084; flow, and temperature, mapping responses: deposition rate, uniformity, stress, and refractive index.</li>
-                <li><strong>Approach:</strong> Multi-response desirability function resolved competing tradeoffs, achieving 0.702 desirability at optimal settings with full Pareto tradeoff mapping and process window visualization.</li>
-                <li><strong>Result:</strong> SPC + DOE + process window analysis matching requirements listed in TSMC, Micron, and Applied Materials process engineer job descriptions.</li>
-              </ul>
-
-              <div class="tech-tags">
-                <span class="tech-tag">Machine Learning</span>
-                <span class="tech-tag">Deep Learning</span>
-<span class="tech-tag">Optical Metrology</span>
-                <span class="tech-tag">Thin Film Characterization</span>
-                <span class="tech-tag">Yield Engineering</span>
-                <span class="tech-tag">Defect Analysis</span>
-                <span class="tech-tag">Statistical Process Control</span>
-                <span class="tech-tag">Design of Experiments</span>
-                <span class="tech-tag">Data Analytics</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Streamlit</span>
-              </div>
-
-              <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
-                <a href="https://sem-toolkit-necebpkufzjgmfdmcr6sw7.streamlit.app/" target="_blank" class="sem-cta-primary">&#x1F680; Live Demo</a>
-                <a href="https://github.com/Narain115/sem-toolkit" target="_blank" class="sem-cta-secondary">&#x1F4BB; GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="exp-card" id="card-p3">
           <div class="card-header">
@@ -702,6 +667,149 @@ sns.heatmap(pivot, cmap=<span class="str">'RdYlGn'</span>, vmin=<span class="str
               </ul>
               <div class="tech-tags">
                 <span class="tech-tag">Machine Learning</span><span class="tech-tag">Digital Twins</span><span class="tech-tag">Predictive Analytics</span><span class="tech-tag">Fab Sustainability</span><span class="tech-tag">CHIPS Act</span><span class="tech-tag">Intel Case Study</span><span class="tech-tag">Energy Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SEM TOOLKIT &mdash; NEW PROJECT -->
+        <div class="exp-card" id="card-sem-toolkit">
+          <div class="card-header">
+            <div class="card-header-left">
+              <div class="card-logo" style="background:linear-gradient(135deg,#2b6cb0,#1a365d);font-size:0.55rem">SEM<br>KIT</div>
+              <div class="card-title-wrap">
+                <h3>Semiconductor Process Intelligence Toolkit</h3>
+                <p>Python &middot; PyTorch &middot; Streamlit &middot; SHAP &middot; CNN &middot; TMM &middot; DOE</p>
+                <span class="proj-cat-chip" style="color:#2b4c7e;background:#ebf4ff;border-color:#bee3f8">Semiconductor &amp; AI/ML</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="card-meta-labels">
+                <span class="role-badge">Personal Project</span>
+                <span class="card-date">May 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>A production grade, four-module Python &amp; Streamlit toolkit applying real semiconductor engineering workflows to industry-standard datasets: <strong>fault detection</strong>, <strong>optical metrology</strong>, <strong>wafer defect classification</strong>, and <strong>process DOE</strong>. Deployed live on Streamlit Cloud. Built to advance intelligent manufacturing, yield optimization, and process control across semiconductor fabs.</p>
+
+              <div class="impact-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:10px">
+                <div class="impact-box"><div class="impact-num">98%</div><div class="impact-label">Fault Detection Accuracy</div></div>
+                <div class="impact-box"><div class="impact-num">81%</div><div class="impact-label">Wafer Defect Classification</div></div>
+                <div class="impact-box"><div class="impact-num">4 nm</div><div class="impact-label">Ellipsometry Fit Error</div></div>
+                <div class="impact-box"><div class="impact-num">0.702</div><div class="impact-label">DOE Desirability Score</div></div>
+              </div>
+
+              <h4>Module 1: Wafer Fault Detection (SECOM)</h4>
+              <ul>
+                <li><strong>Problem:</strong> Real fab data carries a 14:1 pass/fail imbalance across 1,567 wafers and 591 sensors, making standard classifiers blind to failures. Cleaned features to 442 meaningful sensors and applied SMOTE balancing before training a Random Forest classifier to recover rare failure detection.</li>
+                <li><strong>Solution:</strong> SHAP explainability surfaced the exact yield-limiting sensors rather than a black box score, reaching 98% classification accuracy vs. 93% naive baseline. Interpretable sensor attribution maps mirror the root cause analysis workflow used at TSMC, Micron, and KLA.</li>
+              </ul>
+
+              <h4>Module 2: Optical Thin Film Metrology</h4>
+              <ul>
+                <li><strong>Problem:</strong> Film thickness errors at the nanometer scale shift device performance irreversibly. Built a TMM physics engine to simulate multilayer optical behavior across 4 stacks (SiO&#x2082;, Si&#x2083;N&#x2084;, HfO&#x2082;, a-Si) using real semiconductor optical constants and spectroscopic ellipsometry fitting of &#x3A8;/&#x394; data.</li>
+                <li><strong>Solution:</strong> Achieved a 4 nm fit error with full uniformity mapping, matching real metrology throughput constraints. Output mirrors CVD, ALD, and PVD film characterization workflows at TSMC, Applied Materials, and Lam Research.</li>
+              </ul>
+
+              <h4>Module 3: Wafer Defect Pattern Classifier</h4>
+              <ul>
+                <li><strong>Problem:</strong> Manually reviewing 811,000 wafer maps (WM-811K) in production is infeasible. Trained a custom CNN on 2,249 labeled defect maps spanning 9 pattern classes: edge, scratch, center, donut, local, random, near full, and none.</li>
+                <li><strong>Solution:</strong> Grad-CAM pixel-level explainability enabled process engineers to trust model outputs, reaching 81% classification accuracy. Pipeline replicates Automated Defect Classification systems at KLA, Synopsys, and Samsung Semiconductor R&amp;D.</li>
+              </ul>
+
+              <h4>Module 4: PECVD Process DOE Optimization</h4>
+              <ul>
+                <li><strong>Problem:</strong> RF power shifts stress while simultaneously impacting uniformity, making single parameter tuning invalid. Designed a 2&#x2074; full factorial experiment (16 runs + 4 center points) across RF power, pressure, SiH&#x2084; flow, and temperature, mapping four competing responses: deposition rate, uniformity, stress, and refractive index.</li>
+                <li><strong>Solution:</strong> A multiresponse desirability function resolved competing tradeoffs, achieving 0.702 desirability at optimal settings with full process window visualization. SPC, DOE, and process window analysis outputs match requirements in TSMC, Micron, and Applied Materials process engineer job descriptions.</li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Deep Learning</span>
+<span class="tech-tag">Optical Metrology</span>
+                <span class="tech-tag">Thin Film Characterization</span>
+                <span class="tech-tag">Yield Engineering</span>
+                <span class="tech-tag">Defect Analysis</span>
+                <span class="tech-tag">Statistical Process Control</span>
+                <span class="tech-tag">Design of Experiments</span>
+                <span class="tech-tag">Data Analytics</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+
+              <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+                <a href="https://sem-toolkit-necebpkufzjgmfdmcr6sw7.streamlit.app/" target="_blank" class="sem-cta-primary">&#x1F680; Live Demo</a>
+                <a href="https://github.com/Narain115/sem-toolkit" target="_blank" class="sem-cta-secondary">&#x1F4BB; GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BATTERY TOOLKIT — NEW PROJECT -->
+        <div class="exp-card" id="card-bat-toolkit">
+          <div class="card-header">
+            <div class="card-header-left">
+              <div class="card-logo" style="background:linear-gradient(135deg,#276749,#1a4731);font-size:0.55rem">BAT<br>KIT</div>
+              <div class="card-title-wrap">
+                <h3>Li-ion Battery Degradation &amp; State Estimation Toolkit</h3>
+                <p>Python &middot; Streamlit &middot; SciPy &middot; Randles Circuit &middot; DFN Thermal &middot; NASA PCOE</p>
+                <span class="proj-cat-chip" style="color:#276749;background:#f0fff4;border-color:#9ae6b4">Battery &amp; Medical Devices</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="card-meta-labels">
+                <span class="role-badge">Personal Project</span>
+                <span class="card-date">May 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>A three-module Python &amp; Streamlit toolkit applying real battery qualification workflows to <strong>1,112 EIS measurements and 636 discharge cycles</strong> from NASA&rsquo;s PCOE dataset. Covers capacity fade characterization, impedance-based early degradation detection, and physics-based thermal safety analysis at body temperature &mdash; the same analytical workflows used to qualify batteries for implantable cardioverter defibrillators (ICD).</p>
+
+              <div class="impact-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:10px">
+                <div class="impact-box"><div class="impact-num">636</div><div class="impact-label">Real Discharge Cycles</div></div>
+                <div class="impact-box"><div class="impact-num">1,112</div><div class="impact-label">EIS Measurements</div></div>
+                <div class="impact-box"><div class="impact-num">6&times;</div><div class="impact-label">Cell to Cell Fade Rate Spread</div></div>
+                <div class="impact-box"><div class="impact-num">2.1&times;</div><div class="impact-label">Faster Degradation at 37&deg;C</div></div>
+              </div>
+
+              <h4>Module 1: Remaining Useful Life Prediction</h4>
+              <ul>
+                <li><strong>Problem:</strong> Predicting end-of-life before it happens is the core battery qualification challenge. Extracted features from the first 30 formation cycles across 4 NASA cells (636 total discharge cycles) to characterize degradation before full cycle life data is available.</li>
+                <li><strong>Solution:</strong> B0007 lasted 73% longer than B0018 despite nearly identical initial capacity. Capacity fade slope (Pearson r = 0.815) was the strongest early predictor; initial capacity correlation was r = &minus;0.124, confirming it is nearly useless alone. Result: a formation window screening framework directly applicable to ICD cell qualification before device assembly.</li>
+              </ul>
+
+              <h4>Module 2: Electrochemical Impedance Spectroscopy</h4>
+              <ul>
+                <li><strong>Problem:</strong> Capacity fade is a lagging indicator. Processed 1,112 real NASA EIS measurements to track Re (electrolyte resistance) and Rct (charge transfer resistance) across full cycle life using a Randles circuit model, targeting early detection before visible capacity loss.</li>
+                <li><strong>Solution:</strong> Re rose +12&ndash;20% and Rct rose +8&ndash;27% across cells, both increasing <em>before</em> capacity crossed the EOL threshold. Nondestructive impedance monitoring detects SEI growth and active material loss early, critical for implanted devices where in vivo discharge testing is impossible.</li>
+              </ul>
+
+              <h4>Module 3: Thermal Safe Operating Envelope</h4>
+              <ul>
+                <li><strong>Problem:</strong> NASA cells were tested at 24&deg;C room temperature. ICD batteries operate at 37&deg;C body temperature where Arrhenius kinetics accelerate side reactions ~2.1&times;. Built a DFN inspired thermal model using real NASA measured Re (0.0447 &Omega;) as input to scale lab data to in vivo conditions.</li>
+                <li><strong>Solution:</strong> The safe C rate ceiling drops from 2.0C at 25&deg;C to 1.0C at 37&deg;C body temperature. At 45&deg;C (patient fever), 3.0C+ triggers lithium plating risk, with 7 of 15 simulated conditions flagged as unsafe. Output matches the thermal safety analysis required for FDA 510(k) submissions for implantable devices.</li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Capacity Fade Analysis</span>
+                <span class="tech-tag">Electrochemical Impedance</span>
+                <span class="tech-tag">Randles Circuit</span>
+                <span class="tech-tag">RUL Prediction</span>
+                <span class="tech-tag">Thermal Modeling</span>
+                <span class="tech-tag">DFN Physics</span>
+                <span class="tech-tag">Battery Safety</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SciPy</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+
+              <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+                <a href="https://battery-toolkit-ojufrsyarlaw6ykssemseq.streamlit.app/" target="_blank" class="sem-cta-primary">&#x1F680; Live Demo</a>
+                <a href="https://github.com/Narain115/battery-toolkit" target="_blank" class="sem-cta-secondary">&#x1F4BB; GitHub</a>
+                <a href="https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/" target="_blank" class="sem-cta-secondary">&#x1F4CA; NASA Dataset</a>
               </div>
             </div>
           </div>
@@ -915,10 +1023,10 @@ sns.heatmap(pivot, cmap=<span class="str">'RdYlGn'</span>, vmin=<span class="str
         <ul class="skill-list">
           <li>Li-ion Cell Design &amp; Chemistry</li>
           <li>Electrochemistry &amp; SEI Modeling</li>
-          <li>Degradation Modeling (Arrhenius)</li>
+          <li>Capacity Fade Analysis &amp; Arrhenius Modeling</li>
           <li>Thermal Management for Cells</li>
-          <li>Electrolyte Formulation (LiPF&#x2086;/EC/DMC)</li>
-          <li>Battery Materials Selection</li>
+          <li>EIS Impedance Analysis (Randles Circuit)</li>
+          <li>State Estimation &amp; RUL Prediction</li>
         </ul>
       </div>
       <div class="skill-card reveal">
@@ -1135,6 +1243,147 @@ function switchTab(prefix, tabName) {
     panel.classList.add('active');
   }
 }
+
+
+// ── Counter animation ─────────────────────────────────
+function animateCnt(el) {
+  var to = parseFloat(el.getAttribute('data-to'));
+  var sfx = el.getAttribute('data-sfx') || '';
+  var dec = !!el.getAttribute('data-dec');
+  var dur = 1400, t0 = null;
+  function step(ts) {
+    if (!t0) t0 = ts;
+    var p = Math.min((ts - t0) / dur, 1);
+    var e = 1 - Math.pow(1 - p, 3);
+    var v = to * e;
+    el.textContent = (dec ? v.toFixed(1) : Math.round(v).toLocaleString()) + sfx;
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = (dec ? to.toFixed(1) : to.toLocaleString()) + sfx;
+  }
+  requestAnimationFrame(step);
+}
+var cntObs = new IntersectionObserver(function(es) {
+  es.forEach(function(e) {
+    if (e.isIntersecting && !e.target._cnt) { e.target._cnt = true; animateCnt(e.target); }
+  });
+}, {threshold: 0.75});
+document.querySelectorAll('[data-to]').forEach(function(el) { cntObs.observe(el); });
+
+// ── Cursor follower ───────────────────────────────────
+(function() {
+  var dot = document.getElementById('cursor-dot');
+  var ring = document.getElementById('cursor-ring');
+  if (!dot || !ring) return;
+  var mx = -300, my = -300, rx = -300, ry = -300;
+  document.addEventListener('mousemove', function(e) {
+    mx = e.clientX; my = e.clientY;
+    dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+  }, {passive: true});
+  (function lerp() {
+    rx += (mx - rx) * 0.1; ry += (my - ry) * 0.1;
+    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    requestAnimationFrame(lerp);
+  })();
+  document.addEventListener('mousedown', function() {
+    ring.style.transform = 'translate(-50%,-50%) scale(0.6)';
+    dot.style.transform = 'translate(-50%,-50%) scale(1.5)';
+  });
+  document.addEventListener('mouseup', function() {
+    ring.style.transform = ''; dot.style.transform = '';
+  });
+  document.documentElement.addEventListener('mouseleave', function() {
+    dot.style.opacity = '0'; ring.style.opacity = '0';
+  });
+  document.documentElement.addEventListener('mouseenter', function() {
+    dot.style.opacity = '1'; ring.style.opacity = '1';
+  });
+})();
+
+// ── Scroll progress bar ───────────────────────────────
+(function() {
+  var bar = document.getElementById('scroll-prog');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (window.scrollY / h * 100) : 0) + '%';
+  }, {passive: true});
+})();
+
+// ── Hero mouse parallax ───────────────────────────────
+(function() {
+  var hero = document.querySelector('.hero');
+  if (!hero) return;
+  var inner = hero.querySelector('.hero-inner');
+  if (!inner) return;
+  hero.addEventListener('mousemove', function(e) {
+    var r = hero.getBoundingClientRect();
+    var x = (e.clientX - r.left) / r.width - 0.5;
+    var y = (e.clientY - r.top) / r.height - 0.5;
+    inner.style.transition = 'none';
+    inner.style.transform = 'translate(' + (x * 12) + 'px,' + (y * 6) + 'px)';
+  }, {passive: true});
+  hero.addEventListener('mouseleave', function() {
+    inner.style.transition = 'transform 0.65s ease';
+    inner.style.transform = '';
+    setTimeout(function() { inner.style.transition = ''; }, 700);
+  });
+})();
+
+// ── Skill card 3D tilt + stagger reveal ──────────────
+document.querySelectorAll('.skill-card').forEach(function(c, i) {
+  c.style.transitionDelay = (i * 0.06) + 's';
+  c.addEventListener('mousemove', function(e) {
+    var r = c.getBoundingClientRect();
+    var x = (e.clientX - r.left) / r.width - 0.5;
+    var y = (e.clientY - r.top) / r.height - 0.5;
+    c.style.transition = 'box-shadow 0.25s,border-color 0.25s';
+    c.style.transform = 'translateY(-4px) perspective(700px) rotateX(' + (-y * 7) + 'deg) rotateY(' + (x * 7) + 'deg)';
+  }, {passive: true});
+  c.addEventListener('mouseleave', function() {
+    c.style.transition = 'box-shadow 0.25s,border-color 0.25s,transform 0.3s ease';
+    c.style.transform = '';
+  });
+});
+
+// ── Magnetic hero CTA buttons ─────────────────────────
+document.querySelectorAll('.btn-hero-primary,.btn-hero-secondary').forEach(function(btn) {
+  btn.addEventListener('mousemove', function(e) {
+    var r = btn.getBoundingClientRect();
+    var x = (e.clientX - r.left - r.width / 2) * 0.28;
+    var y = (e.clientY - r.top - r.height / 2) * 0.28;
+    btn.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+  }, {passive: true});
+  btn.addEventListener('mouseleave', function() {
+    btn.style.transition = 'transform 0.35s ease, all 0.2s';
+    btn.style.transform = '';
+    setTimeout(function() { btn.style.transition = ''; }, 380);
+  });
+});
+
+
+// ── Section echo parallax ────────────────────────────────────
+window.addEventListener('scroll', function() {
+  document.querySelectorAll('.section-echo').forEach(function(echo) {
+    var parent = echo.closest('section');
+    if (!parent) return;
+    var rect = parent.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      echo.style.transform = 'translateY(' + (-rect.top * 0.06) + 'px)';
+    }
+  });
+}, {passive: true});
+
+// ── Back-to-top ───────────────────────────────────────────────
+(function() {
+  var btn = document.getElementById('back-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    btn.classList.toggle('show', window.scrollY > 500);
+  }, {passive: true});
+  btn.addEventListener('click', function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+})();
 
 function toggleB44Detail(id){
   var p=document.getElementById(id);
