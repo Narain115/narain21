@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -m pip install matplotlib numpy)",
+      "Bash(python3 -c \"import matplotlib; print\\(matplotlib.__version__\\)\")",
+      "Bash(python3)",
+      "Bash(dir \"c:\\\\Users\\\\admin\\\\Desktop\\\\website\\\\\" /OD 2>&1)",
+      "Bash(python3 \"c:/Users/admin/Desktop/website/fix_hero_dashes.py\")",
+      "Bash(python3 \"c:/Users/admin/Desktop/website/fix_proj_flat_grid.py\")"
+    ]
+  }
+}

@@ -1,0 +1,772 @@
+# COMPLETE PORTFOLIO WEBSITE BUILD PROMPT FOR CLAUDE COWORK
+
+## CRITICAL INSTRUCTION
+Build me a comprehensive, production-ready single-page portfolio website that showcases my technical depth in semiconductor engineering, battery development, and mechanical design. This portfolio must demonstrate I have done deep technical research and work throughout my career.
+
+## BUILD SPECIFICATIONS
+
+## REFERENCE DESIGN
+Style inspired by: https://newtonyuan.com/
+- Clean, minimal design
+- Smooth scrolling between sections
+- Fixed navigation at top
+- Professional color scheme
+
+## HYBRID LAYOUT STRUCTURE (CRITICAL)
+
+**Smooth Scroll Sections (like Newton Yuan):**
+1. Hero - Full screen with photo, name, title
+2. About - 5-paragraph comprehensive background
+3. Skills - Grid layout with 6 categories
+4. Certifications - RCR Training, BSc Honours
+5. Contact - Email, phone, LinkedIn
+
+**Expandable Card Sections (NOT like Newton Yuan):**
+6. Experience - 3 expandable cards (AMD, Plastic Recycling, Data Mine)
+   - Each card has tabs: Overview → Technical Details → Impact
+7. Projects - 7 expandable cards organized in 4 categories
+   - Each card has tabs: Problem → Approach → Results → Technical Details
+
+## PERSONAL INFORMATION
+
+**Name:** Narain Karthikeyan
+**Title:** Semiconductor Engineer | Cell Engineer
+**Contact:**
+- Email: nkarthik4004@gmail.com
+- Phone: +1 (317) 340-7553
+- LinkedIn: linkedin.com/in/narainkarthi21
+- Location: West Lafayette, Indiana, USA
+
+## EDUCATION
+
+**Purdue University** (Aug 2024 – May 2026)
+- MS Materials Science & Engineering | GPA: 3.7/4.0
+- Focus: Semiconductors, Process Engineering, Battery Cell Engineering
+- Coursework: Thin-Film Deposition, Device Physics, Material Characterization, Lean Manufacturing
+
+**University of Twente** (Aug 2019 – July 2023)
+- BS Mechanical Engineering | GPA: 7.5/10.0
+- Honors in Entrepreneurship & Business Development (top 10%)
+
+## ABOUT SECTION (5 PARAGRAPHS)
+
+Paragraph 1: Materials Science graduate student at Purdue (GPA 3.7, graduating May 2026) specializing in semiconductor process engineering and battery cell development. Work combines materials characterization, data-driven process optimization, and mechanical design.
+
+Paragraph 2: At AMD's Austin facility, optimized HBM wafer yield by analyzing 10,000+ data points and building Python automation tools that cut root cause analysis time by 60%. Traced yield-limiting defects to Czochralski oxygen contamination at wafer edges and developed die placement algorithm that recovered 15%+ yield loss, saving millions in scrap costs.
+
+Paragraph 3: Background spans semiconductor packaging (thin-film deposition, SPC, DOE), polymer characterization (FT-IR, DSC, TGA, TMA, DMA), and Li-ion battery design. Designed thermal test fixtures using SolidWorks Flow Simulation and FEA, optimized bioprocess manufacturing through statistical modeling, built mechanical systems from CAD to fabrication.
+
+Paragraph 4: BS in Mechanical Engineering from University of Twente (GPA 7.5/10.0) with honors certification in Entrepreneurship and Business Development. Coursework foundation: thermodynamics, fluid mechanics, heat transfer, materials science—complementing graduate focus on semiconductor processes, electrochemistry, data analytics.
+
+Paragraph 5: Looking for full-time roles in semiconductor process engineering, battery manufacturing, or materials R&D where I can apply data-driven problem solving, cross-functional collaboration, and hands-on technical work to drive yield improvements and product development.
+
+## EXPERIENCE SECTION (3 EXPANDABLE CARDS)
+
+### Card 1: AMD - Packaging Engineer (Aug 2024 – Dec 2024)
+
+**Overview Tab:**
+- Investigated 12-layer HBM yield reduction using SEM defect review and optical metrology data
+- Built Python heatmap visualization of 2,000+ test datapoints per wafer
+- Pattern discovery: edge dies at 93% yield vs center at 99-100%
+- Root cause: oxygen contamination from Czochralski crystal growth at wafer edges
+- Created die placement algorithm (NumPy, Pandas) to flag high-risk edge zones
+- 60% reduction in RCA time (5+ days → under 48 hours)
+- Recovered >15% yield loss, saved millions in scrap costs
+
+**Technical Details Tab:**
+- Developed Python automation scripts using pandas, matplotlib, seaborn, SQL, JMP
+- Coordinated with OSAT suppliers (ASE, Amkor, Applied Materials) on equipment qualification
+- Supported wafer fabrication by collecting in-line metrology data from CVD deposition tools in cleanroom (Class 10/100)
+- Equipment: KLA inspection platforms, Hitachi CD-SEM, CVD chambers
+- LabVIEW for test equipment data acquisition during qualification activities
+
+**Impact Tab:**
+- 60% reduction in evaluation time (10,000+ datapoints processed)
+- 8% FPY improvement, Cpk improvement from 1.6 to 1.8
+- Tool adopted as standard by packaging team
+
+**Tech Tags:** Python, NumPy, Pandas, Matplotlib, Seaborn, SQL, JMP, SPC, DOE, Root Cause Analysis, SEM, Optical Metrology, KLA, Hitachi CD-SEM, CVD, LabVIEW
+
+### Card 2: Plastic Recycling Inc - R&D Engineer (May 2024 – Aug 2024)
+
+**Overview Tab:**
+- Built materials characterization database integrating FT-IR, DSC, TGA, TMA, DMA
+- 200+ polymer samples characterized
+- Reduced qualification time from 2 weeks to 3 days
+- Designed and executed DOE experiments (3-factor, 18 runs) to optimize twin-screw extrusion
+- 17% reduction in process variation
+
+**Technical Details Tab:**
+- Conducted thermal and microstructural analysis to evaluate structure-property relationships
+- Applied DOE to extrusion parameters: temperature profile (3 levels), screw speed (3 levels), residence time (2 levels)
+- JMP statistical analysis: main effects, interactions, ANOVA
+- Key finding: temperature profile dominant factor (±5°C deviations caused large viscosity swings)
+
+**Impact Tab:**
+- 17% reduction in process variation
+- Material qualification time: 2 weeks → 3 days
+- Database enabled rapid feedstock evaluation
+
+**Tech Tags:** FT-IR, DSC, TGA, TMA, DMA, DOE, JMP, Polymer Characterization, Twin-Screw Extrusion, Rheometry, Thermal Analysis
+
+### Card 3: Data Mine Purdue - Graduate Researcher (Aug 2024 – Jun 2025)
+
+**Overview Tab:**
+- Collaborated with NIIMBL on N-mAb integrated continuous bioprocess production
+- Applied DOE and SPC to optimize continuous manufacturing processes
+- 3-fold HMWS clearance improvement
+- Developed 7 process control strategies using Monte Carlo simulation
+- Created interactive desktop application with data visualizations and RTD modeling
+
+**Technical Details Tab:**
+- Monte Carlo simulation for forecasting modeling
+- Plotly for data visualization
+- Python/JMP statistical analysis
+- Bayesian hierarchical modeling for time-dependent parameters
+- Process characterization across bioreactor duration
+
+**Impact Tab:**
+- 3-fold yield improvement in HMWS clearance
+- 7 process design recommendations for FDA-aligned commercial manufacturing
+- Interactive tool for stakeholders to explore model predictions dynamically
+
+**Tech Tags:** Python, JMP, DOE, SPC, Monte Carlo Simulation, Plotly, Bioprocess Optimization, Statistical Modeling, NIIMBL
+
+## PROJECTS SECTION (7 EXPANDABLE CARDS IN 4 CATEGORIES)
+
+### CATEGORY 1: Semiconductor & Process Engineering
+
+**Project 1: HBM Wafer Yield Investigation**
+
+**Problem Tab:**
+- AMD faced critical yield issues with High Bandwidth Memory (HBM) stacks
+- 12-layer vertical die stacks, sourcing from multiple suppliers
+- Target: 78% yield (0.98^12 = 0.78 probability calculation)
+- Actual: Falling short of target
+- Challenge: 2,000+ data points per wafer × multiple suppliers × physical locations × test parameters
+- Manual RCA took 5+ days per investigation
+- By the time problems identified, defective batches already in production
+- Millions in scrap costs
+
+**Approach Tab:**
+- Built Python visualization pipeline using NumPy, Pandas, Matplotlib
+- Created spatial heatmaps showing yield distribution across wafer surface
+- Pattern discovery: Edge dies at 93% yield vs center at 99-100%
+- Contacted supplier for transistor-level measurements across entire wafer
+- Root cause traced: Oxygen contamination from Czochralski crystal growth process
+- O₂ from quartz crucible dissolves into molten silicon, concentrates at crystal edges
+- Higher O₂ at edges creates precipitation sites during thermal processing
+- Developed die placement algorithm (NumPy/Pandas) to flag high-risk edge zones before assembly
+
+**Results Tab:**
+- 60% reduction in RCA time: 5+ days → under 48 hours
+- Recovered >15% yield loss
+- Saved millions in scrap costs
+- 8% FPY improvement, Cpk 1.6 → 1.8
+- Python tool became standard for packaging team
+
+**Technical Details Tab:**
+- **Python Pipeline:**
+  1. Data extraction from test equipment (2,000+ points/wafer)
+  2. Pandas DataFrame construction with die coordinates
+  3. NumPy spatial correlation analysis (edge vs center)
+  4. Matplotlib/Seaborn heatmap generation (color-coded by yield)
+  5. Statistical visualization for trend identification
+
+- **Die Placement Algorithm:**
+  - Input: Wafer map with die coordinates + test results
+  - Processing: Calculate radial distance from wafer center for each die
+  - Threshold: Flag dies beyond 85% of wafer radius as high-risk
+  - Output: Exclusion list for assembly process
+  - Validation: SPC charts tracking yield improvement over time
+
+- **Czochralski O₂ Contamination Mechanism:**
+  Silicon wafers grown using Czochralski process (seed crystal pulled from molten silicon). Oxygen from quartz crucible dissolves into melt and incorporates into crystal. Higher oxygen concentrations at crystal edges (last to solidify) create precipitation sites during subsequent thermal processing, degrading transistor performance. This edge-to-center gradient = 93% vs 99% yield pattern.
+
+- **Equipment & Tools:**
+  - KLA inspection platforms for optical metrology
+  - Hitachi CD-SEM for defect review
+  - Python (NumPy, Pandas, Matplotlib, Seaborn)
+  - SQL for data warehouse queries
+  - JMP for statistical process control
+  - Coordinated with OSAT suppliers: ASE, Amkor, Applied Materials
+
+**Tech Tags:** Python, NumPy, Pandas, Matplotlib, Seaborn, SQL, JMP, SPC, DOE, Root Cause Analysis, 8D, SEM, Optical Metrology, KLA, Hitachi CD-SEM, CVD, Wafer Fabrication, HBM, TSMC, Samsung
+
+**Project 2: CVD Process Development & Characterization**
+- Worked with lab partners in CVD chamber at AMD/Purdue cleanroom
+- Collected in-line metrology data, correlated film thickness/uniformity with process parameters
+- Supported wafer fabrication process development
+- Class 10/100 cleanroom environment
+
+**Project 3: Sustainable Semiconductor Manufacturing with AI**
+- Authored research paper on AI for sustainable semiconductor manufacturing
+- Machine learning, digital twins, predictive analytics to reduce energy, water, chemical waste
+- Analyzed cleanroom energy demands, material inefficiencies
+- Intel case studies, CHIPS R&D program discussion
+
+### CATEGORY 2: Battery & Energy Systems
+
+**Project 4: Li-ion Battery Design for Implantable Cardiac Defibrillators**
+
+**Problem Tab:**
+- Design battery for implantable cardioverter defibrillator (ICD)
+- Requirements: 2-year operational life, 75% charge retention minimum
+- Constraints: Biocompatibility, size limitations, safety for medical device
+- Must deliver 5-7A pulse discharge for defibrillation events
+- Thermal management critical (body temperature environment)
+- SEI growth and electrolyte decomposition limit lifespan
+
+**Approach Tab:**
+- **Cell Chemistry Selection:**
+  - Anode: LiC₆ (lithiated graphite)
+  - Cathode: LiMnO₂ (lithium manganese oxide)
+  - Electrolyte: LiPF₆ salt in EC/DMC solvent mixture
+  - Capacity: 1800mAh at 3V nominal voltage
+  
+- **Electrochemical Degradation Modeling:**
+  - SEI (Solid Electrolyte Interphase) growth modeling using Arrhenius equation
+  - Lithium plating risk assessment during charging
+  - Electrolyte decomposition kinetics over 2-year timeline
+  - Charging algorithm with C-rate limiting to prevent plating
+
+- **Thermal Management:**
+  - Heat dissipation analysis under 5-7A pulse discharge conditions
+  - Temperature rise calculations
+  - Thermal coupling with titanium casing
+
+- **Mechanical Design:**
+  - Titanium casing for biocompatibility
+  - Hermetic seal design for 10-year service life
+  - Safety constraints for medical-grade reliability
+
+**Results Tab:**
+- Achieved 1800mAh capacity at 3V nominal
+- 2-year operational life design
+- 75% charge retention over battery lifetime
+- Thermal dissipation validated for pulse discharge
+- Medical-grade reliability and safety compliance
+
+**Technical Details Tab:**
+
+**Degradation Modeling Equations:**
+- SEI growth: thickness increases logarithmically with time
+- Arrhenius temperature dependence: k = A × exp(-Ea/RT)
+- Calendar aging: capacity loss = f(temperature, SOC, time)
+- Cycle aging: capacity fade per charge/discharge cycle
+
+**Cell Design Specifications:**
+- Energy density: 5.4 Wh (1800mAh × 3V)
+- Discharge profile: 5-7A pulse capability
+- Operating temperature: 37°C (body temperature)
+- End-of-life: 75% of initial capacity after 2 years
+- Safety features: Pressure relief, thermal cutoff
+
+**Materials Selection Rationale:**
+- LiMnO₂ chosen over LiCoO₂ for thermal stability
+- LiC₆ anode for stable SEI formation
+- LiPF₆ electrolyte for ionic conductivity at body temperature
+- EC/DMC solvent for SEI stability and low viscosity
+
+**Thermal Analysis:**
+- Peak temperature rise during 7A pulse: calculated using heat capacity
+- Titanium casing thermal conductivity
+- Convective cooling from surrounding tissue
+
+**Tech Tags:** Li-ion Batteries, LiC₆, LiMnO₂, LiPF₆, Electrochemistry, SEI Growth, Degradation Modeling, Arrhenius Equation, Thermal Management, Medical Devices, Biocompatibility, Titanium Casing, Pulse Discharge, Battery Management System
+
+### CATEGORY 3: Mechanical Design & Analysis
+
+**Project 5: Thermal Resistance Test Fixture Design**
+
+**Problem Tab:**
+- Need to characterize thermal resistance of semiconductor packages
+- Accurate R_θJC (junction-to-case thermal resistance) measurement critical for reliability
+- Test setup must provide: controlled heat extraction, uniform pressure, minimal contact resistance
+- Challenge: Design fixture that works across different package sizes
+- Must validate design before CNC machining (expensive to iterate)
+
+**Approach Tab:**
+
+**Design Components:**
+1. **Copper Cold Plate:**
+   - Serpentine water channels for heat extraction
+   - 2 L/min flow rate specification
+   - 0.9 cross-section ratio optimization
+   - Minimizes pressure drop while maintaining turbulent flow
+
+2. **Aluminum Load Frame:**
+   - Calibrated compression springs for constant pressure
+   - Maintains uniform contact across package surface
+   - Adjustable for different package heights
+
+3. **Validation Workflow:**
+   - SolidWorks 3D modeling of complete assembly
+   - Flow Simulation for thermal-fluid analysis
+   - FEA for mechanical stress/deflection
+   - Technical drawings for CNC machining
+
+**Results Tab:**
+- Validated design met thermal performance requirements
+- Pressure distribution within ±5% across package surface
+- Temperature differential matched analytical predictions
+- Mechanical deflection <0.1mm under test loads
+- Fixture successfully manufactured and deployed
+
+**Technical Details Tab:**
+
+**SolidWorks Flow Simulation Analysis:**
+- Inlet/outlet boundary conditions: 2 L/min water flow, 25°C inlet
+- Turbulence model: k-ε for serpentine channel flow
+- Heat load: 100W representative power
+- Results: Pressure drop, flow stagnation zones, temperature rise
+- Iteration: Adjusted channel cross-section to eliminate stagnation
+
+**FEA Static Load Analysis:**
+- Material: Aluminum 6061-T6 for load frame, Copper C101 for cold plate
+- Boundary conditions: Fixed base, spring force distribution
+- Mesh: Tetrahedral elements, refined at contact interfaces
+- Output: Von Mises stress distribution, deflection under compression
+- Validation: Max stress << yield strength, deflection acceptable
+
+**Design Specifications:**
+- Cold plate dimensions: Matched to package outline
+- Channel geometry: 0.9 width-to-height ratio
+- Flow rate: 2 L/min ±0.1 L/min
+- Spring constant: Calibrated for 50 N target force
+- Thermal interface material: Thermal grease (k = 5 W/mK)
+
+**Manufacturing:**
+- Generated GD&T technical drawings from SolidWorks
+- CNC milling for serpentine channels
+- Surface finish: Ra < 1.6 μm for thermal contact
+- Assembly: Compression springs, alignment pins, fasteners
+
+**Tech Tags:** SolidWorks, Flow Simulation, FEA, Thermal Analysis, CFD, Serpentine Channels, Heat Transfer, GD&T, Technical Drawings, CNC Machining, Copper, Aluminum, Semiconductor Packaging, R_θJC Measurement
+
+**Project 6: Off-Road Vehicle Frame Design**
+- Complete buggy mechanical system in SolidWorks
+- Tubular steel frame as triangulated structure (tension/compression loading)
+- FEA: full frame geometry under impact loads (front, rear, rollover zones)
+- Redesigned critical load paths with gusseted plate for weld load distribution
+
+### CATEGORY 4: Data Science & Manufacturing
+
+**Project 7: NIIMBL Bioprocess Optimization - N-mAb Integrated Continuous Manufacturing**
+
+**Problem Tab:**
+- NIIMBL (National Institute for Innovation in Manufacturing Biopharmaceuticals) project
+- N-mAb: monoclonal antibody continuous bioprocess production
+- Challenge: Continuous perfusion bioreactor with integrated downstream processing
+- Product quality varies over time in continuous systems (unlike batch)
+- Need to control Critical Quality Attributes (CQAs) in real-time
+- High Molecular Weight Species (HMWS) clearance critical for product purity
+- Must develop control strategy that evolves from clinical through commercial manufacturing
+
+**Approach Tab:**
+- Applied Design of Experiments (DOE) to continuous perfusion operations
+- Monte Carlo simulation for forecasting and modeling process parameter relationships
+- Statistical Process Control (SPC) for monitoring quality attributes over bioreactor duration
+- Bayesian hierarchical modeling for time-dependent parameters
+- Developed 7 process control strategies aligned with FDA validation protocols
+- Created interactive desktop application with Plotly visualizations
+- Residence Time Distribution (RTD) modeling for stakeholder exploration
+
+**Results Tab:**
+- 3-fold improvement in HMWS clearance
+- 7 process control strategies for commercial manufacturing
+- Interactive tool enabling dynamic model prediction exploration
+- Process characterization across entire bioreactor duration (Days 1, 8, 10 sampling)
+- Control strategy evolution: Clinical → Pre-PPQ → Commercial
+
+**Technical Details Tab:**
+
+**From N-mAb Poster (extract these diagrams):**
+1. **Process Flow Diagram:** 
+   - Bioreactor → Cell Retention → Capture (Protein A) → Low pH Hold → Polishing #1 (F/T) → Polishing #2 (B/E) → Surge/Retentate Tank → Viral Inactivation → SPTFF/UF/DF → Formulation → Bulk Drug Substance
+   
+2. **Control Strategy Evolution:**
+   - Control Strategy #1 (Initial Clinical): Platform process
+   - Control Strategy #2 (Pre-PPQ): Updated based on PC studies
+   - Control Strategy #3 (Commercial): Updated based on PPQ and HA responses
+
+3. **Key Graphs to Extract from Poster:**
+   - Glycosylation variants as function of bioreactor day (G2F stable vs variable, High Mannose patterns)
+   - pH titration curves: with/without cycle homogenization (input variability vs output control)
+   - Product titer profiles: dynamic vs steady-state perfusion
+   - Analytical sampling plan across process stages
+
+4. **Statistical Methods:**
+   - Time Dependency Assessment: ANOVA of time as significant effect
+   - DOE/RSM Model approach for non-time-dependent parameters
+   - Mixed Model Repeated Measurement for time-dependent parameters
+   - Bayesian Hierarchical Model: linear/non-linear relationships, posterior distributions
+
+5. **Integrated Control Strategy Table (from poster):**
+   - CQA: Glycosylation (Galactosylation, Fucosylation, High Mannose)
+   - CQA: Deamidation at Asn325
+   - CQA: HMWS → 3-fold clearance via CEX chromatography
+   - CQA: Host Cell Protein (HCP)
+   - Process Controls: Bioreactor PPs (Temp, pH, DO, harvest day), DSP PPs, Material Attributes
+
+**Equipment & Software:**
+- Continuous perfusion bioreactor (N-stage)
+- Multi-column capture chromatography (Protein A)
+- Virus inactivation hold tanks with pH control
+- Python (Pandas, NumPy, Matplotlib, Plotly)
+- JMP for statistical analysis
+- Monte Carlo simulation frameworks
+
+**Tech Tags:** Python, JMP, DOE, SPC, Monte Carlo Simulation, Plotly, Pandas, NumPy, Bayesian Modeling, Bioprocess Optimization, NIIMBL, N-mAb, Perfusion Bioreactor, Chromatography, Statistical Modeling, FDA Validation, RTD Modeling
+
+**Project 8: Apollo Tyres Polymer Characterization (Bachelor's Thesis)**
+- Process & Materials Engineer Intern (Apr 2023 – Jul 2023)
+- Enschede, Netherlands
+- Optimized raw materials usage investigating correlation of polymer suppliers on final compound properties
+- Identified and resolved problems to enhance elastomer properties in tire manufacturing
+- Materials Laboratory work: ML Scorch, Rebound, Tensile strength, Rheological property testing
+- Developed intuition on material testing and rubber compound analysis
+- **Add screenshot from LinkedIn showing this work**
+
+**Additional Bachelor's Projects (2020-2023):**
+These can be added as brief mentions in the Projects section or Skills section:
+- COVID-19 Food Dispensers for Shelters: Cherry tomato dispenser with sorting mechanism, hands-free design
+- Mirror System Control for Laser in Additive Manufacturing: Simulink/Matlab pulse inducer, wavy motion control, 10e-6m tolerance
+- Train Carriage Optimization for Pathogen Flow Mitigation: Fluid mechanics modeling, seating redesign to reduce pathogen spread (2020-2021 pandemic project)
+- Off-road Buggy Structural Design: Already listed as Project 6
+
+## SKILLS SECTION (6 CATEGORIES GRID)
+
+**Semiconductor Processes:**
+Thin-Film Deposition (CVD, PVD, ALD), Wafer Fabrication, Process Integration, Cleanroom Operations, Lithography & Etch Theory, HBM & Advanced Packaging
+
+**Battery Engineering:**
+Li-ion Cell Design, Electrochemistry, Degradation Modeling, Thermal Management, Electrolyte Formulation, Battery Materials
+
+**Materials Characterization:**
+FT-IR Spectroscopy, DSC, TGA, TMA, DMA, SEM (exposure), Profilometry, Ellipsometry (theory), Thermal/Mechanical Analysis
+
+**Process Control & Quality:**
+SPC, DOE, Root Cause Analysis (8D, FMEA), Yield Optimization, Continuous Improvement, Lean Manufacturing
+
+**CAD & Mechanical Design:**
+SolidWorks (3D Modeling, Assemblies), Flow Simulation, FEA (Static, Thermal), Technical Drawings, GD&T, CNC Machining
+
+**Data Analytics & Programming:**
+Python (NumPy, Pandas, Matplotlib), JMP, SQL, MATLAB/Simulink, Microsoft Excel, Statistical Modeling
+
+## CERTIFICATIONS
+
+**Responsible Conduct of Research (RCR) Training**
+- CITI Program | Apr 2024 – Apr 2028
+- Credential ID: 62456579
+
+**BSc Honours - Entrepreneurship & Business Development**
+- University of Twente | Jul 2023
+- Top 10% of cohort
+
+## IMAGES TO USE & PLACEMENT - EXACT FILENAMES
+
+### UPLOADED FILES YOU HAVE:
+1. image.jpeg - Graduation photo
+2. WhatsApp_Image_2026-05-25_at_2_13_39_PM.jpeg - CNC machining Maxiem software
+3. WhatsApp_Image_2026-05-25_at_2_13_39_PM1.jpeg - Composite manufacturing hands-on
+4. WhatsApp_Image_2026-05-25_at_2_14_23_PM.jpeg - Burgers model equations
+5. 1779735592470_N-mAb_Poster_Oct2022.pdf - NIIMBL poster with diagrams
+6. 1779729174551_image.png - LinkedIn: Plastic Recycling experience
+7. 1779729185854_image.png - LinkedIn: Data Mine + LMW experiences
+8. 1779729196024_image.png - LinkedIn: PRECIMEASURE + Apollo Tyres
+9. 1779729274953_image.png - LinkedIn: Projects (NIIMBL, AI paper)
+10. 1779729285105_image.png - LinkedIn: Battery + Bachelor's projects
+
+### HERO SECTION
+**File to use:**
+- `image.jpeg` - Your graduation photo in Purdue regalia with diploma
+
+### ABOUT SECTION
+**No images** - Keep clean with text only
+
+### EXPERIENCE SECTION (Expandable Cards)
+
+**AMD Card - Technical Details Tab:**
+- Create visualization concepts referencing:
+  - Python heatmap showing wafer yield distribution (edge 93% vs center 99%)
+  - SPC control chart concept
+- No actual uploaded images for AMD (it's recent work, confidential)
+
+**Plastic Recycling Card - Technical Details Tab:**
+**Files to use:**
+- `1779729174551_image.png` - Shows LinkedIn description of this role
+- `WhatsApp_Image_2026-05-25_at_2_13_39_PM.jpeg` - CNC machining interface (Maxiem software cutting carbon fiber composite)
+- `WhatsApp_Image_2026-05-25_at_2_13_39_PM1.jpeg` - Hands-on composite manufacturing work
+
+**Data Mine Card - Technical Details Tab:**
+**Files to use:**
+- `1779729185854_image.png` - LinkedIn description of Data Mine project
+- `1779729274953_image.png` - LinkedIn projects overview including NIIMBL
+- Extract from `1779735592470_N-mAb_Poster_Oct2022.pdf` (see detailed extraction list below)
+
+### PROJECTS SECTION (Expandable Cards by Category)
+
+**CATEGORY 1: Semiconductor & Process Engineering**
+
+**Project 1 - HBM Yield Investigation - Technical Details Tab:**
+- Create concept visualizations (no actual uploaded images for confidential AMD work)
+- Reference: wafer heatmap, SPC charts, die placement algorithm flowchart
+
+**Project 2 - CVD Process Development - Technical Details Tab:**
+- No images (cleanroom work, equipment descriptions only)
+
+**Project 3 - Sustainable Semiconductor AI - Technical Details Tab:**
+**File to use:**
+- `1779729274953_image.png` - LinkedIn screenshot showing this project description
+
+**CATEGORY 2: Battery & Energy Systems**
+
+**Project 4 - Li-ion Battery ICD Design - Technical Details Tab:**
+**File to use:**
+- `1779729285105_image.png` - LinkedIn screenshot with battery project details
+- Create diagrams: cell schematic (anode|electrolyte|cathode), degradation curve
+
+**CATEGORY 3: Mechanical Design & Analysis**
+
+**Project 5 - Thermal Fixture - Technical Details Tab:**
+**File to use:**
+- `WhatsApp_Image_2026-05-25_at_2_14_23_PM.jpeg` - Mathematical modeling (Burgers model equations - use for mechanical modeling context)
+- Create concept diagrams: SolidWorks CAD model, Flow Simulation results, serpentine channel design
+
+**Project 6 - Off-Road Buggy - Technical Details Tab:**
+**File to use:**
+- `1779729285105_image.png` - LinkedIn screenshot mentioning buggy project
+- Create concept diagrams: Frame FEA stress analysis, triangulated structure
+
+**CATEGORY 4: Data Science & Manufacturing**
+
+**Project 7 - NIIMBL Bioprocess - Technical Details Tab (MOST IMAGE-HEAVY):**
+**Files to use:**
+- `1779729274953_image.png` - LinkedIn project description
+- `1779729185854_image.png` - LinkedIn Data Mine description
+- **PRIMARY SOURCE:** `1779735592470_N-mAb_Poster_Oct2022.pdf`
+
+**Extract these specific images/diagrams from the PDF:**
+1. **Page 1 - Process Flow Diagrams:**
+   - Option 1 process schematic (Bioreactor → Cell Retention → Capture → etc.)
+   - Option 2 process schematic (with Batch Pool Tank variation)
+   
+2. **Page 1 - Center Section:**
+   - "Two major options for integrated continuous bioprocesses" comparison diagram
+   
+3. **Page 1 - Right Column:**
+   - Control Strategy Evolution flowchart (Strategy #1 → #2 → #3)
+   - Process Design Elements numbered list diagram
+   
+4. **Page 1 - Data Visualization Graphs:**
+   - Graph showing glycosylation variants (G2F stable vs variable, High Mannose) over bioreactor days
+   - pH control comparison graph (with vs without cycle homogenization)
+   - Product titer profile comparison (dynamic vs steady-state perfusion)
+   
+5. **Page 1 - Tables:**
+   - Integrated Control Strategy table (CQA, Source/Stress/Clearance, Process Controls)
+   - Analytical sampling and testing plan table
+   
+6. **Page 1 - Bottom Section:**
+   - Breakthrough curves for deltaUV-based load control (orange/blue/black lines)
+   - Method Considerations table (Time Dependency Assessment, DOE/RSM, etc.)
+
+**Project 8 - Apollo Tyres Polymer - Technical Details Tab:**
+**File to use:**
+- `1779729196024_image.png` - LinkedIn screenshot showing Apollo Tyres internship with materials testing details
+
+### SKILLS SECTION
+**No images** - Clean grid layout with text only
+
+### CERTIFICATIONS SECTION
+**Files to use (optional - for visual reference):**
+- `1779729370374_image.png` - RCR Training certification screenshot (if you uploaded this)
+- `1779729376014_image.png` - BSc Honours screenshot (if you uploaded this)
+
+### CONTACT SECTION
+**No images** - Text and icons only
+
+### CRITICAL: HOW TO EXTRACT IMAGES FROM N-mAb POSTER PDF
+
+**File:** `1779735592470_N-mAb_Poster_Oct2022.pdf`
+
+**Extraction Instructions for Claude Cowork:**
+
+This is a single-page academic poster. You need to extract specific diagrams/graphs from it.
+
+**Method 1 - If you can directly extract images from PDF:**
+Use a PDF library to extract embedded images at their locations on the page.
+
+**Method 2 - If you need to reference the PDF:**
+Read the PDF, identify the diagram locations, and either:
+- Screenshot specific regions programmatically
+- Recreate the key diagrams based on the data shown
+- Reference the diagrams by describing their location on the poster
+
+**Priority Diagrams to Extract (in order of importance):**
+
+1. **Process Flow Diagrams** (top section, labeled "OPTION 1" and "OPTION 2")
+   - Shows: Bioreactor → Cell Retention → Capture → Polishing → etc.
+   - Two variations with different tank configurations
+
+2. **Glycosylation Variants Graph** (middle-left section)
+   - X-axis: Culture Day (0-35)
+   - Y-axis: Glycan (%)
+   - Shows G2F stable/variable and High Mannose patterns
+   - Critical for showing product quality variation over time
+
+3. **pH Control Comparison** (middle section)
+   - Shows input variability vs output control
+   - Demonstrates cycle homogenization effect
+   - Two side-by-side graphs labeled "Titration of homogenized eluate" vs "Direct titration"
+
+4. **Control Strategy Evolution** (right side)
+   - Flowchart showing three stages: Control Strategy #1 → #2 → #3
+   - From "Initial Clinical Supplies" to "Commercial Manufacturing"
+
+5. **Integrated Control Strategy Table** (bottom-right)
+   - Rows: CQAs (Glycosylation, Deamidation, HMWS, HCP)
+   - Columns: Source/Stress, Process Controls, Analytical Controls, Residual Risk
+
+6. **Breakthrough Curves** (bottom-left)
+   - Orange line (outlet UV), blue line (load UV), black dashed line (baseline)
+   - Shows deltaUV-based load control
+
+**If extraction is difficult:**
+- At minimum, describe these diagrams in detail in the Technical Details tab
+- Include the data/concepts even if you can't display the actual poster images
+- Focus on the glycosylation graph and process flow as most important visuals
+
+### SUMMARY OF IMAGE USAGE BY FILENAME:
+
+**MUST USE (high priority):**
+- ✅ `image.jpeg` - Hero section
+- ✅ `1779735592470_N-mAb_Poster_Oct2022.pdf` - Extract 6+ diagrams for NIIMBL project
+- ✅ `WhatsApp_Image_2026-05-25_at_2_13_39_PM.jpeg` - Plastic Recycling/Composites
+- ✅ `WhatsApp_Image_2026-05-25_at_2_13_39_PM1.jpeg` - Plastic Recycling/Composites
+
+**SHOULD USE (supporting):**
+- ✅ `WhatsApp_Image_2026-05-25_at_2_14_23_PM.jpeg` - Thermal fixture/mechanical modeling
+- ✅ `1779729274953_image.png` - NIIMBL & AI paper project context
+- ✅ `1779729285105_image.png` - Battery & buggy project context
+- ✅ `1779729196024_image.png` - Apollo Tyres context
+
+**REFERENCE ONLY (for text content, not display):**
+- `1779729174551_image.png` - Plastic Recycling text details
+- `1779729185854_image.png` - Data Mine text details
+
+## TECHNICAL REQUIREMENTS
+
+**CRITICAL: Technical Depth & Interactivity**
+
+The user specifically requested: "add more detailed information into each of the technical projects and experiences. So, it shows that I have done deep technical research and work in my career. And some images alongside to make it more interactive."
+
+For EVERY project and experience, include:
+
+1. **Detailed Problem Statements**
+   - Specific technical challenges with quantitative context
+   - Business impact and constraints
+   - Why standard approaches wouldn't work
+
+2. **Methodology & Approach**
+   - Specific tools, equipment, software used (with model numbers/versions where applicable)
+   - Step-by-step technical process
+   - Statistical methods (DOE setup, ANOVA, regression models)
+   - Code snippets or algorithm logic where relevant
+
+3. **Results with Data**
+   - Quantitative metrics (percentages, time reductions, yield improvements)
+   - Before/after comparisons
+   - Statistical significance
+   - Charts, graphs, diagrams from uploaded images
+
+4. **Technical Specifications**
+   - Equipment details: "KLA inspection platforms, Hitachi CD-SEM, FT-IR spectroscopy"
+   - Process parameters: "2 L/min flow rate, 0.9 cross-section ratio, 2,000+ datapoints per wafer"
+   - Material properties: "LiC₆ anode, LiMnO₂ cathode, LiPF₆ electrolyte in EC/DMC, 1800mAh capacity"
+   - Statistical outcomes: "Cpk improvement from 1.6 to 1.8, 8% FPY improvement"
+
+5. **Images Integration**
+   - HBM project: Create or show Python heatmap visualization concept
+   - NIIMBL project: Extract process flow diagrams, control charts, pH titration curves, glycosylation pattern graphs from N-mAb_Poster_Oct2022.pdf
+   - Composites: WhatsApp_Image (CNC machining interface showing Maxiem software, composite layup work)
+   - Mathematical modeling: WhatsApp_Image showing Burgers model equations
+   - Each expandable card should have relevant images in the Technical Details tab
+
+6. **Single-page React application with smooth scrolling**
+2. Smooth scrolling with fixed navigation
+3. Sections: Hero, About, Experience (expandable), Projects (expandable), Skills, Certifications, Contact
+4. Color scheme: Professional blue/gray (similar to Newton Yuan)
+5. Responsive design (mobile/tablet/desktop)
+6. Expandable cards with tab navigation for Experience and Projects
+7. Clean, minimal aesthetic
+8. All images integrated and optimized
+
+## EXPANDABLE CARD BEHAVIOR
+
+- Click card header to expand/collapse
+- Smooth animation on expand/collapse
+- Tabs switch content within expanded card
+- Only one card expanded at a time (optional - your choice)
+- Arrow icon rotates on expand
+
+Build this as a production-ready portfolio website.
+
+## FINAL COMPREHENSIVE CHECKLIST
+
+**User's Explicit Requirements from Chat:**
+1. ✅ Reference site: https://newtonyuan.com/ for clean, smooth-scroll design
+2. ✅ Hybrid layout: Newton's smooth scroll for Hero/About/Skills/Contact BUT expandable cards for Experience/Projects
+3. ✅ "Add more detailed information into each of the technical projects and experiences"
+4. ✅ "Shows that I have done deep technical research and work in my career"
+5. ✅ "Some images alongside to make it more interactive"
+6. ✅ "Don't miss any good projects and experience"
+7. ✅ "Focus should be me as an engineer who works in semiconductors and battery (energy) with very strong mechanical background"
+8. ✅ "Clean and concise and divided into subgroups so they can easily see what they want to"
+9. ✅ "Comprehensive enough" - all LinkedIn details, Apollo Tyres, bachelor's projects, certifications included
+
+**Content Completeness:**
+- AMD HBM yield work: ✅ Full technical depth (Python pipeline, Czochralski contamination, SPC)
+- Plastic Recycling: ✅ DOE, FT-IR/DSC/TGA/TMA/DMA, 17% variation reduction
+- Data Mine NIIMBL: ✅ Monte Carlo, Bayesian modeling, 3-fold HMWS improvement, poster diagrams
+- CVD process development: ✅ Cleanroom work, metrology, process correlation
+- Li-ion battery: ✅ Full electrochemistry, degradation modeling, thermal analysis
+- Thermal fixture: ✅ SolidWorks, Flow Sim, FEA, manufacturing
+- Off-road buggy: ✅ Structural FEA, impact analysis
+- Sustainable semiconductor AI: ✅ Paper details
+- Apollo Tyres: ✅ Polymer characterization, rheology, tensile testing
+- Bachelor's projects: ✅ COVID dispensers, laser control, train carriage
+- Certifications: ✅ RCR, BSc Honours
+
+**Technical Depth Validation:**
+Each project must have:
+- ✅ Specific equipment models/software versions
+- ✅ Quantitative metrics and results
+- ✅ Statistical methods (DOE, SPC, ANOVA, regression)
+- ✅ Process parameters (temperatures, flow rates, dimensions)
+- ✅ Material specifications (compositions, properties)
+- ✅ Before/after comparisons with percentages
+- ✅ Industry context (suppliers, standards, protocols)
+
+**Images & Interactivity:**
+- ✅ Graduation photo in hero
+- ✅ CNC machining screenshot
+- ✅ Composite manufacturing photo
+- ✅ Mathematical modeling equations
+- ✅ NIIMBL poster diagrams (multiple charts and process flows)
+- ✅ LinkedIn screenshots for reference
+- ✅ Expandable cards with tab navigation
+- ✅ Smooth animations
+
+**Design Quality:**
+- Professional color scheme (blue/teal for semiconductor, green for battery, amber for mechanical)
+- Clean typography
+- Responsive layout
+- Fixed navigation
+- Smooth scrolling
+- Card expand/collapse animations
+- Tab switching within cards
+
+This portfolio must showcase deep technical expertise across semiconductor processing, battery engineering, mechanical design, and data science while remaining clean, navigable, and professional.

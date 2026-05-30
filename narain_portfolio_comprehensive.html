@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narain Karthikeyan - Equipment Engineer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: #0f172a;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section - Dark Elegant */
+        .hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero .tagline {
+            font-size: 1.5em;
+            color: #94a3b8;
+            margin-bottom: 25px;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero .subtitle {
+            font-size: 1.15em;
+            color: #cbd5e1;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+
+        .stat-box {
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-box::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #818cf8, transparent);
+        }
+
+        .stat-number {
+            font-size: 3.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            filter: drop-shadow(0 0 20px rgba(129, 140, 248, 0.3));
+        }
+
+        .stat-label {
+            font-size: 0.95em;
+            color: #94a3b8;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #818cf8, #c084fc);
+            border-radius: 2px;
+        }
+
+        .section-intro {
+            font-size: 1.15em;
+            color: #cbd5e1;
+            margin-bottom: 60px;
+            line-height: 1.9;
+        }
+
+        /* Interactive Timeline - Dark Theme */
+        .timeline-container {
+            position: relative;
+            margin: 80px 0;
+        }
+
+        .timeline {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            position: relative;
+        }
+
+        .timeline h3 {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 40px;
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 60px;
+            top: 140px;
+            bottom: 50px;
+            width: 3px;
+            background: linear-gradient(180deg, #818cf8 0%, #c084fc 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 100px;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 48px;
+            top: 8px;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            border-radius: 50%;
+            border: 3px solid #0f172a;
+            box-shadow: 0 0 0 4px rgba(129, 140, 248, 0.3);
+            z-index: 2;
+            transition: all 0.3s;
+        }
+
+        .timeline-item:hover .timeline-dot {
+            transform: scale(1.4);
+            box-shadow: 0 0 0 8px rgba(129, 140, 248, 0.4), 0 0 20px rgba(129, 140, 248, 0.5);
+        }
+
+        .timeline-content {
+            background: rgba(30, 41, 59, 0.6);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            transition: all 0.3s;
+        }
+
+        .timeline-item:hover .timeline-content {
+            background: rgba(30, 41, 59, 0.8);
+            transform: translateX(15px);
+            border-color: rgba(129, 140, 248, 0.3);
+        }
+
+        .timeline-date {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 12px;
+            font-size: 1.15em;
+        }
+
+        .timeline-description {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        /* Skills Matrix - Dark Theme */
+        .skills-matrix {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .skill-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border-left: 4px solid #818cf8;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-left: 4px solid #818cf8;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .skill-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(129, 140, 248, 0.2);
+            border-color: rgba(129, 140, 248, 0.5);
+            background: rgba(30, 41, 59, 0.7);
+        }
+
+        .skill-card h3 {
+            color: #f1f5f9;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .skill-card .requirement {
+            color: #818cf8;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .skill-card .evidence {
+            color: #cbd5e1;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .match-meter {
+            margin-top: 20px;
+            height: 8px;
+            background: rgba(148, 163, 184, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .match-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #818cf8 0%, #c084fc 100%);
+            border-radius: 10px;
+            width: 0;
+            transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 0 10px rgba(129, 140, 248, 0.5);
+        }
+
+        .skill-card.visible .match-fill {
+            width: var(--match-percent);
+        }
+
+        /* Project Cards - Dark Elegant */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .project-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        .project-card.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .project-card:hover {
+            transform: scale(1.03) translateY(-15px);
+            box-shadow: 0 25px 70px rgba(129, 140, 248, 0.25);
+            border-color: rgba(129, 140, 248, 0.3);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #3730a3 0%, #6b21a8 100%);
+            color: white;
+            padding: 35px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-header::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+            transition: all 0.6s;
+        }
+
+        .project-card:hover .project-header::after {
+            transform: translate(-30%, -30%);
+        }
+
+        .project-header h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-type {
+            opacity: 0.9;
+            font-size: 0.95em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-body {
+            padding: 35px;
+        }
+
+        .project-body p {
+            margin-bottom: 20px;
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        /* Animated Metrics */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .metric {
+            text-align: center;
+            padding: 25px;
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            transition: all 0.3s;
+        }
+
+        .metric:hover {
+            background: linear-gradient(135deg, #3730a3 0%, #6b21a8 100%);
+            transform: translateY(-8px);
+            border-color: transparent;
+            box-shadow: 0 10px 30px rgba(129, 140, 248, 0.3);
+        }
+
+        .metric:hover .metric-value,
+        .metric:hover .metric-label {
+            color: white;
+        }
+
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            transition: all 0.3s;
+        }
+
+        .metric-label {
+            font-size: 0.85em;
+            color: #94a3b8;
+            margin-top: 8px;
+            transition: all 0.3s;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .tech-tag {
+            background: rgba(30, 41, 59, 0.8);
+            color: #cbd5e1;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 0.85em;
+            font-weight: 600;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            transition: all 0.3s;
+            cursor: default;
+        }
+
+        .tech-tag:hover {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(129, 140, 248, 0.4);
+            border-color: transparent;
+        }
+
+        /* Competencies - Dark Theme */
+        .competencies {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            margin-bottom: 80px;
+        }
+
+        .competencies h3 {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 45px;
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        .competency-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+        }
+
+        .competency-category {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .competency-category.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .competency-category h4 {
+            color: #818cf8;
+            margin-bottom: 25px;
+            font-size: 1.2em;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(148, 163, 184, 0.2);
+        }
+
+        .competency-category ul {
+            list-style: none;
+        }
+
+        .competency-category li {
+            padding: 12px 0;
+            color: #cbd5e1;
+            font-size: 0.95em;
+            transition: all 0.3s;
+            cursor: default;
+        }
+
+        .competency-category li:hover {
+            color: #c084fc;
+            transform: translateX(15px);
+            font-weight: 600;
+        }
+
+        .competency-category li:before {
+            content: "✓";
+            color: #818cf8;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+
+        /* Fit Statement - Dark Elegant */
+        .fit-statement {
+            background: linear-gradient(135deg, #3730a3 0%, #6b21a8 100%);
+            color: white;
+            padding: 70px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(129, 140, 248, 0.3);
+        }
+
+        .fit-statement::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            animation: rotate 25s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .fit-statement-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .fit-statement h3 {
+            font-size: 2.3em;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .fit-statement p {
+            font-size: 1.2em;
+            line-height: 2;
+            opacity: 0.95;
+            max-width: 950px;
+            margin: 0 auto;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #818cf8 0%, #c084fc 100%);
+            z-index: 1000;
+            transition: width 0.1s;
+            box-shadow: 0 0 10px rgba(129, 140, 248, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2em; }
+            .hero .tagline { font-size: 1.2em; }
+            .hero-stats { gap: 40px; }
+            .skills-matrix { grid-template-columns: 1fr; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .competency-grid { grid-template-columns: 1fr; }
+            .metrics { grid-template-columns: 1fr; }
+            .timeline-line { left: 20px; }
+            .timeline-item { padding-left: 60px; }
+            .timeline-dot { left: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Narain Karthikeyan</h1>
+            <div class="tagline">Equipment Engineer | Semiconductor Manufacturing Specialist</div>
+            <div class="subtitle">Data-driven equipment troubleshooting, process optimization, and R&D experience spanning semiconductor, battery, and polymer manufacturing. Proven track record improving yields, reducing variation, and building analytical tools from scratch.</div>
+            
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <span class="stat-number" data-target="60">0</span>
+                    <div class="stat-label">% Faster RCA</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="18">0</span>
+                    <div class="stat-label">% Defect Reduction</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="5">0</span>
+                    <div class="stat-label">Major Projects</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="timeline-container">
+            <div class="timeline">
+                <h3>Equipment Engineering Journey</h3>
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019-2023 | Bachelor's in Mechanical Engineering, University of Twente</div>
+                        <div class="timeline-title">Engineering Foundation & CAD Modeling</div>
+                        <p class="timeline-description">Built strong engineering foundation through hands-on work with manufacturing equipment including CNC machines, milling equipment, 3D printers for prototyping, and machining tools. Gained experience in CAD modeling and equipment operation. Designed thermal test fixture for semiconductor package testing (Jan-Mar 2023) using SolidWorks Flow Simulation and FEA. Completed bachelor's thesis on polymer processing for Apollo Tyres (Mar-Jul 2023), applying DOE and SPC to identify process failure modes.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2025 - Aug 2025 | Plastic Recycling Inc, Indianapolis</div>
+                        <div class="timeline-title">Equipment Engineering & Operator Training</div>
+                        <p class="timeline-description">R&D Engineer role with primary focus on equipment handling and assisting equipment engineers. Operated and maintained 5 analytical instruments (FT-IR, DSC, TGA, TMA, DMA), performing daily calibrations and troubleshooting equipment failures. Trained manufacturing operators on equipment operation protocols and troubleshooting procedures. Optimized twin-screw extrusion process via DOE, achieving 17% variation reduction. Coordinated with equipment OEMs on design modifications and maintenance schedules.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2025 - Dec 2025 | AMD Packaging, Austin TX</div>
+                        <div class="timeline-title">Semiconductor Packaging & Yield Analysis</div>
+                        <p class="timeline-description">Packaging Engineer supporting HBM packaging for AI accelerators. Led process engineering investigation on wafer-level defects, building Python pipeline to automate root cause analysis (60% time reduction). Used 5-Why analysis and coordinated with wafer supplier to obtain SIMS data, identifying oxygen contamination hypothesis from Czochralski crystal growth. Implemented SPC monitoring (p-charts) for yield tracking. If hypothesis and team findings are implemented, could result in 15% yield recovery. Gained hands-on cleanroom experience (Class 10/100) and understanding of fab operations.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2024 - Present | MS Materials Science & Engineering, Purdue University</div>
+                        <div class="timeline-title">Deepening Equipment & Process Expertise</div>
+                        <p class="timeline-description">Graduate coursework in Thin-Film Deposition (CVD, PVD, ALD, PECVD theory), Device Physics (CMOS fabrication), and Material Characterization. Hands-on CVD operation in cleanroom, including ellipsometry for film thickness/uniformity measurement and helium leak detection procedures. Graduate research on Li-ion cells for implantable cardiac defibrillators. Data Mine collaboration with NIIMBL on bioprocess optimization (3-fold yield improvement). Authored research paper on AI-enabled sustainable semiconductor manufacturing (Jan-May 2025). Expected graduation: May 2026. Throughout my career, I've consistently worked with equipment—designing it, operating it, troubleshooting it, maintaining it, and continuously learning about it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Job Fit Analysis</h2>
+        <p class="section-intro">Direct mapping of my experience to the Equipment Engineer role requirements at Atomic Semi:</p>
+
+        <div class="skills-matrix">
+            <div class="skill-card" style="--match-percent: 95%">
+                <h3>Equipment Maintenance & Troubleshooting</h3>
+                <div class="requirement">Requirement:</div>
+                <p class="evidence">Respond to maintenance calls, diagnose failures, implement corrective actions</p>
+                <div class="requirement">Evidence:</div>
+                <p class="evidence">Maintained 5 analytical instruments at PRI (FT-IR, DSC, TGA, TMA, DMA). Diagnosed DSC sensor drift via SPC trending, recalibrated using two-point method. Troubleshot extruder torque fluctuations, identified worn screw elements, coordinated OEM replacement. Trained operators on troubleshooting protocols. Adjusted PM schedules based on failure data.</p>
+                <div class="match-meter"><div class="match-fill"></div></div>
+            </div>
+
+            <div class="skill-card" style="--match-percent: 92%">
+                <h3>SPC & Process Monitoring</h3>
+                <div class="requirement">Requirement:</div>
+                <p class="evidence">Use SPC tools to monitor tool performance and identify trends</p>
+                <div class="requirement">Evidence:</div>
+                <p class="evidence">Applied SPC across multiple contexts: Individual-X charts for DSC calibration and equipment monitoring, p-charts with binomial distribution for HBM yield trends and edge die screening. Caught sensor drift before out-of-spec production. Used control charts to optimize PM frequency.</p>
+                <div class="match-meter"><div class="match-fill"></div></div>
+            </div>
+
+            <div class="skill-card" style="--match-percent: 90%">
+                <h3>Wafer Fab Processes</h3>
+                <div class="requirement">Requirement:</div>
+                <p class="evidence">Understanding of deposition, etch, anneal, and wafer fab processes</p>
+                <div class="requirement">Evidence:</div>
+                <p class="evidence">Hands-on CVD operation at Purdue (CVD, PVD, ALD, PECVD theory and fundamentals). Practiced ellipsometry for film thickness and uniformity measurement, helium leak detection procedures. Device Physics coursework covering etch and anneal processes. Understand vacuum systems, gas delivery, and plasma generation fundamentals. Cleanroom experience (Class 10/100) at AMD.</p>
+                <div class="match-meter"><div class="match-fill"></div></div>
+            </div>
+
+            <div class="skill-card" style="--match-percent: 87%">
+                <h3>Vacuum Systems</h3>
+                <div class="requirement">Requirement:</div>
+                <p class="evidence">Experience with vacuum systems and helium leak detection</p>
+                <div class="requirement">Evidence:</div>
+                <p class="evidence">Hands-on helium leak detection training during CVD coursework at Purdue. Understand pump types (roughing, turbo, cryo), pressure ranges for different processes (CVD at 0.1-10 Torr, PVD at 1-10 mTorr), and leak detection methodology. Academic training combined with cleanroom operational exposure. Eager for deeper troubleshooting experience.</p>
+                <div class="match-meter"><div class="match-fill"></div></div>
+            </div>
+
+            <div class="skill-card" style="--match-percent: 98%">
+                <h3>Data Analysis & Python</h3>
+                <div class="requirement">Requirement:</div>
+                <p class="evidence">Analyze data to support decision-making and process improvement</p>
+                <div class="requirement">Evidence:</div>
+                <p class="evidence">Built Python pipeline automating root cause analysis (SQL + NumPy/Pandas), reducing investigation time 60%. Created correlation matrices for process parameter optimization at AMD (pulled data from Snowflake, correlated parameters with metrology results). Proficient in Python, SQL, Excel for data analysis and visualization.</p>
+                <div class="match-meter"><div class="match-fill"></div></div>
+            </div>
+
+            <div class="skill-card" style="--match-percent: 93%">
+                <h3>SolidWorks & CAD</h3>
+                <div class="requirement">Requirement:</div>
+                <p class="evidence">Mechanical design and CAD experience</p>
+                <div class="requirement">Evidence:</div>
+                <p class="evidence">Designed thermal test fixture using SolidWorks with serpentine water channels and calibrated load frame. Validated with Flow Simulation (2 L/min flow) and FEA (deflection <0.05mm). Generated technical drawings for CNC machining. Strong CAD modeling background from bachelor's program with hands-on manufacturing equipment experience.</p>
+                <div class="match-meter"><div class="match-fill"></div></div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-intro">Projects specifically relevant to the Equipment Engineer role at Atomic Semi, demonstrating equipment troubleshooting, process optimization, and data-driven problem solving:</p>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>HBM Yield Investigation</h3>
+                    <div class="project-type">AMD | Semiconductor Packaging | Aug-Dec 2025</div>
+                </div>
+                <div class="project-body">
+                    <p>Led process engineering investigation on HBM packaging yield for AI accelerators. Built Python pipeline tracing data through entire manufacturing process (package test → die assembly → wafer test → supplier data), generating spatial heatmaps from 10,000+ data points per wafer. Used 5-Why analysis to systematically drill down to root cause.</p>
+                    
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="metric-value">60%</span>
+                            <div class="metric-label">Faster RCA</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">18%</span>
+                            <div class="metric-label">Defect Reduction</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">~15%</span>
+                            <div class="metric-label">Potential Recovery</div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Technical Approach:</strong> Coordinated with wafer supplier to obtain SIMS data cross-checking oxygen contamination hypothesis from Czochralski crystal growth at wafer edge. Implemented SPC monitoring using p-charts with binomial distribution to track package yield trends and edge die yields for early warning. If hypothesis and team findings are implemented, could result in approximately 15% yield recovery.</p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">NumPy/Pandas</span>
+                        <span class="tech-tag">SPC (p-charts)</span>
+                        <span class="tech-tag">5-Why Analysis</span>
+                        <span class="tech-tag">SIMS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>CVD Process Knowledge Development</h3>
+                    <div class="project-type">Purdue University | Thin Film Deposition | 2024</div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Hands-On Training:</strong> Operated CVD equipment in Purdue cleanroom as part of graduate coursework. Learned thin-film deposition fundamentals including CVD, PVD, ALD, and PECVD theory. Practiced ellipsometry for film thickness and uniformity measurement. Performed helium leak detection procedures to troubleshoot vacuum system integrity. Developed understanding of how process parameters (temperature, pressure, gas flow rates) affect film quality and uniformity.</p>
+                    
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="metric-value">4</span>
+                            <div class="metric-label">Deposition Types</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Hands-On</span>
+                            <div class="metric-label">CVD Operation</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Helium</span>
+                            <div class="metric-label">Leak Detection</div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Applied Knowledge:</strong> At AMD, used this CVD foundation to support passivation coating work. Pulled process parameter data and metrology results from Snowflake database, created correlation analysis using Python to identify which parameters drove film quality variation. Understanding equipment operation helped interpret data patterns and suggest process improvements.</p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">CVD</span>
+                        <span class="tech-tag">Ellipsometry</span>
+                        <span class="tech-tag">Helium Leak Detection</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Snowflake</span>
+                        <span class="tech-tag">Process Correlation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Equipment Engineering & Process Optimization</h3>
+                    <div class="project-type">Plastic Recycling Inc | R&D Engineering | May-Aug 2025</div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Equipment Engineering:</strong> Primary focus on equipment handling and assisting equipment engineers. Operated and maintained 5 analytical instruments (FT-IR, DSC, TGA, TMA, DMA). Performed daily calibrations using reference standards (indium at 156.6°C, tin at 232°C). Used FT-IR extensively for incoming material qualification—ran 200+ samples to build quality approval database. Trained manufacturing operators on equipment operation and troubleshooting protocols.</p>
+                    
+                    <p><strong>Process Optimization:</strong> Designed DOE (18 runs) testing temperature, screw speed, and residence time on twin-screw extruder. Found Zone 3 temperature dominant—±5°C deviations caused large melt viscosity swings. Tightened control from ±10°C to ±3°C, achieving 17% reduction in process variation.</p>
+                    
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="metric-value">17%</span>
+                            <div class="metric-label">Variation ↓</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">200+</span>
+                            <div class="metric-label">FT-IR Samples</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">5</span>
+                            <div class="metric-label">Instruments</div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Troubleshooting:</strong> Diagnosed DSC sensor drift (2.4°C) via SPC trending, recalibrated using two-point method. Troubleshot extruder torque fluctuations (±15% variation), identified worn kneading elements through process monitoring, coordinated OEM replacement. Built decision matrix linking thermal properties to feedstock acceptance criteria.</p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">DOE</span>
+                        <span class="tech-tag">FT-IR</span>
+                        <span class="tech-tag">DSC</span>
+                        <span class="tech-tag">SPC (Individual-X)</span>
+                        <span class="tech-tag">Equipment Maintenance</span>
+                        <span class="tech-tag">Operator Training</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>AI-Enabled Sustainable Semiconductor Manufacturing</h3>
+                    <div class="project-type">Purdue University | Research Paper | Jan-May 2025</div>
+                </div>
+                <div class="project-body">
+                    <p>Authored comprehensive research paper analyzing how AI and machine learning enable sustainable semiconductor manufacturing. Explored technologies including predictive maintenance, defect prediction models, digital twins, and predictive analytics to reduce energy use, water consumption, and chemical waste while maintaining production efficiency.</p>
+                    
+                    <p><strong>Key Topics:</strong> Predictive maintenance reducing equipment breakdowns and energy waste. Defect prediction models saving materials by spotting issues early. Digital twins cutting R&D waste by reducing physical prototyping. Smart logistics for low-carbon supply chains. Energy optimization adjusting fab operations to minimize idle power consumption.</p>
+                    
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="metric-value">5</span>
+                            <div class="metric-label">AI Applications</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Industry</span>
+                            <div class="metric-label">Case Studies</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Policy</span>
+                            <div class="metric-label">Analysis</div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Analysis:</strong> Examined current sustainability challenges including cleanroom energy demands and material inefficiencies. Highlighted industrial case studies including Intel's AI-driven strategies. Discussed broader implications around data infrastructure, cybersecurity, and evolving policy frameworks like the CHIPS R&D program.</p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Digital Twins</span>
+                        <span class="tech-tag">Predictive Maintenance</span>
+                        <span class="tech-tag">Semiconductor Mfg</span>
+                        <span class="tech-tag">Sustainability</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Thermal Test Fixture Design</h3>
+                    <div class="project-type">University of Twente | Mechanical Design | Jan-Mar 2023</div>
+                </div>
+                <div class="project-body">
+                    <p>Designed and validated test fixture to measure thermal resistance of semiconductor packages under controlled conditions. Created custom cooling system with copper cold plate featuring serpentine water channels optimized for 2 L/min flow rate. Designed aluminum load frame with calibrated compression springs to maintain constant contact force.</p>
+                    
+                    <p><strong>Validation:</strong> Used SolidWorks Flow Simulation to verify flow uniformity, check for stagnation zones, and confirm pressure drop within spec. Performed FEA to verify load frame deflection stayed within 0.05mm tolerance under load. Generated technical drawings with dimensions, tolerances, and assembly instructions for CNC machining. Coordinated with university machine shop for fabrication.</p>
+                    
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="metric-value">2 L/min</span>
+                            <div class="metric-label">Flow Rate</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value"><0.05mm</span>
+                            <div class="metric-label">Deflection</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">0.9</span>
+                            <div class="metric-label">X-section Ratio</div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Relevance:</strong> Demonstrates mechanical design skills, validation methodology (simulation + FEA), and ability to design custom hardware for semiconductor applications—directly applicable to Atomic Semi's custom fab equipment development approach.</p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">SolidWorks</span>
+                        <span class="tech-tag">Flow Simulation</span>
+                        <span class="tech-tag">FEA</span>
+                        <span class="tech-tag">Mechanical Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Technical Competencies</h2>
+        <div class="competencies">
+            <h3>Core Skills Across Equipment, Process, and Data Engineering</h3>
+            <div class="competency-grid">
+                <div class="competency-category">
+                    <h4>Equipment & Processes</h4>
+                    <ul>
+                        <li>CVD/PVD/ALD deposition theory</li>
+                        <li>Ellipsometry (film characterization)</li>
+                        <li>Helium leak detection</li>
+                        <li>Vacuum systems fundamentals</li>
+                        <li>Equipment troubleshooting</li>
+                        <li>Preventive maintenance</li>
+                        <li>Calibration procedures</li>
+                        <li>FT-IR spectroscopy</li>
+                        <li>DSC thermal analysis</li>
+                        <li>Twin-screw extrusion</li>
+                        <li>Semiconductor packaging</li>
+                        <li>Cleanroom operations (Class 10/100)</li>
+                    </ul>
+                </div>
+
+                <div class="competency-category">
+                    <h4>Data & Analysis</h4>
+                    <ul>
+                        <li>Python (NumPy, Pandas, Matplotlib)</li>
+                        <li>SQL database queries</li>
+                        <li>Statistical analysis</li>
+                        <li>SPC (Individual-X, p-charts)</li>
+                        <li>Design of Experiments (DOE)</li>
+                        <li>Root cause analysis (5-Why, FMEA)</li>
+                        <li>Data visualization</li>
+                        <li>Process correlation analysis</li>
+                        <li>Failure mode documentation</li>
+                        <li>Technical report writing</li>
+                    </ul>
+                </div>
+
+                <div class="competency-category">
+                    <h4>Design & Manufacturing</h4>
+                    <ul>
+                        <li>SolidWorks CAD</li>
+                        <li>Flow Simulation (CFD)</li>
+                        <li>FEA (structural analysis)</li>
+                        <li>Technical drawing generation</li>
+                        <li>CNC machining</li>
+                        <li>Milling operations</li>
+                        <li>3D printing (prototyping)</li>
+                        <li>Tolerance analysis</li>
+                        <li>Material selection</li>
+                        <li>Manufacturing coordination</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fit-statement">
+            <div class="fit-statement-content">
+                <h3>Why I'm the Right Fit for Atomic Semi</h3>
+                <p>Throughout my career, I've consistently worked with equipment—from operating CNC machines and 3D printers during my bachelor's, to maintaining analytical instruments at Plastic Recycling Inc, to working in a semiconductor cleanroom at AMD. I've designed equipment (thermal test fixtures), operated it (CVD tools, analytical instruments, manufacturing machinery), troubleshot it (DSC sensor drift, extruder torque issues), maintained it (daily calibrations, PM scheduling), and continuously learned about it (helium leak detection, vacuum systems, thin-film processes). My semiconductor experience started during my bachelor's with thermal fixture design for package testing, progressed through hands-on CVD operation at Purdue, and deepened during my AMD co-op working on HBM packaging. My recent research on AI in semiconductor manufacturing shows I think strategically about fab operations and stay current with industry trends. What excites me about Atomic Semi is the R&D environment—building novel fab equipment from scratch. I understand both the equipment side (how CVD chambers, vacuum systems, gas delivery work) and the process side (how parameters affect results), which is exactly what's needed when developing tools without OEM documentation. I'm ready to bring my systematic troubleshooting approach, data analysis capabilities, and hands-on equipment experience to help Atomic Semi iterate quickly on custom tool designs.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Animated counters
+        const animateCounter = (element, target, duration = 2000) => {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start);
+                }
+            }, 16);
+        };
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.stat-number').forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                animateCounter(stat, target);
+            });
+        });
+
+        // Intersection Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item, .skill-card, .project-card, .competency-category').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
